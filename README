@@ -1,0 +1,38 @@
+Supported browsers:
+===================
+
+Currently testing it only on Google Chrome and Firefox with Greasemonkey, 
+but I intend to support other browsers later.
+
+What's currently translated:
+============================
+
+* Most of the tag names on the JLU website 
+  (the detailed descriptions aren't translated).
+
+* A majority of the badge names and descriptions. Some descriptions 
+  on the badges page haven't been filled in as they were too difficult 
+  for me to translate.
+
+* Most of the tabs, UI elements etc on the main page, questions page, 
+  tags page, users page and unanswered page.
+
+* The Stack Exchange dropdown's tabs, e-mail settings, the notifications 
+  tab and site names have been localized, but the descriptions of the 
+  sites haven't. I intend to do them later.
+  
+* The "user reputation changes" changes popup at the top.
+
+* I've translated some of the WMD editor's tooltips and redirected to 
+  a brief editing guide in Japanese for now (the "mini JavaScript help" 
+  and "detailed help" haven't been translated).
+
+* The user profile pages and the tabs in them are mostly localized.
+
+* The "community moderator tools" have largely been localized, but the 
+  "review" page hasn't been yet. I intend to do it later.
+  
+* I don't intend to translate the "about", "FAQ" or "privileges" pages 
+  (aside from the names of the privileges) for now, though there are 
+  separate efforts to write Japanese documentation at 
+  http://meta.japanese.stackexchange.com/questions/625/
