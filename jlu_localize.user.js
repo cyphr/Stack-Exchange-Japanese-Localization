@@ -2133,44 +2133,44 @@ var regexes = {
     //=======================================================//
     
     'html: span.action-desc': [
-	    ['^This question covers exactly the same ground as earlier questions on this topic; '+
-	    'its answers may be merged with another identical question\\.$',
-	
-	        'この質問は前の質問に同じで、回答は他の質問に統合する可能性はあります。'],
-	
-	    ['^Questions on (.*?) - Stack Exchange are expected to '+
-	    'generally relate to (.*?), within the scope defined in the faq\\.$',
-	        
-	        '{a|faq|よくある質問}に従って、「{jluvar|1|sites|lower}、Stack Exchange」'+
-	        'への質問は「{match|2}」にかかわる内容です。'],
-		
-		/*['^Questions on (.*?) Meta - Stack Exchange are expected to be '+
-		'discussion, support, and feature requests for (.*?) - Stack Exchange\\.$',
-		
-			''],*/
-		
-	    ['^This question is not a good fit to our Q&A format. We expect answers to generally '+
-	    'involve facts, references, or specific expertise; this question will likely '+
-	    'solicit opinion, debate, arguments, polling, or extended discussion\\.$',
-	    
-	        'この質問は私たちの質問や回答フォーマットに合っていません。'], // FIXME!
-	
-	    ['^It\'s difficult to tell what is being asked here. This question is ambiguous, '+
-	    'vague, incomplete, or rhetorical and cannot be reasonably answered in its current '+
-	    'form\\.$',
-	
-	        'この質問は分かりにくいです。この質問はあいまいやはっきりしないや未完成や修辞学的で、'+
-	        '現在の型では合理的に答えられません。'],
-	
-	    ['^This question is unlikely to ever help any future visitors; it is only relevant '+
-	    'to a small geographic area, a specific moment in time, or an extraordinarily '+
-	    'narrow situation that is not generally applicable to the worldwide audience of '+
-	    'the internet\\.$',
-	    
-	        'この質問は将来の訪問者を役に立たない可能性は高いです。'+
-	        '小さい地理的な領域やある瞬間やとても狭い状況で、'+
-	        'インターネットの世界中の聴衆を一般的に適用ではありません。']
-	]
+        ['^This question covers exactly the same ground as earlier questions on this topic; '+
+        'its answers may be merged with another identical question\\.$',
+    
+            'この質問は前の質問に同じで、回答は他の質問に統合する可能性はあります。'],
+    
+        ['^Questions on (.*?) - Stack Exchange are expected to '+
+        'generally relate to (.*?), within the scope defined in the faq\\.$',
+            
+            '{a|faq|よくある質問}に従って、「{jluvar|1|sites|lower}、Stack Exchange」'+
+            'への質問は「{match|2}」にかかわる内容です。'],
+        
+        /*['^Questions on (.*?) Meta - Stack Exchange are expected to be '+
+        'discussion, support, and feature requests for (.*?) - Stack Exchange\\.$',
+        
+            ''],*/
+        
+        ['^This question is not a good fit to our Q&A format. We expect answers to generally '+
+        'involve facts, references, or specific expertise; this question will likely '+
+        'solicit opinion, debate, arguments, polling, or extended discussion\\.$',
+        
+            'この質問は私たちの質問や回答フォーマットに合っていません。'], // FIXME!
+    
+        ['^It\'s difficult to tell what is being asked here. This question is ambiguous, '+
+        'vague, incomplete, or rhetorical and cannot be reasonably answered in its current '+
+        'form\\.$',
+    
+            'この質問は分かりにくいです。この質問はあいまいやはっきりしないや未完成や修辞学的で、'+
+            '現在の型では合理的に答えられません。'],
+    
+        ['^This question is unlikely to ever help any future visitors; it is only relevant '+
+        'to a small geographic area, a specific moment in time, or an extraordinarily '+
+        'narrow situation that is not generally applicable to the worldwide audience of '+
+        'the internet\\.$',
+        
+            'この質問は将来の訪問者を役に立たない可能性は高いです。'+
+            '小さい地理的な領域やある瞬間やとても狭い状況で、'+
+            'インターネットの世界中の聴衆を一般的に適用ではありません。']
+    ]
 }
 
 /*
