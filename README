@@ -27,10 +27,10 @@ What's currently translated:
   tags page, users page and unanswered page.
 
 * The Stack Exchange dropdown's tabs, e-mail settings, the notifications 
-  tab and site names have been localized, but the descriptions of the 
-  sites haven't. I intend to do them later.
+  tab and most of the site names have been localized, but the descriptions 
+  of the sites haven't. I intend to do them later.
   
-* The "user reputation changes" changes popup at the top.
+* The "user reputation changes" changes popup at the top has been done.
 
 * I've translated some of the WMD editor's tooltips and redirected to 
   a brief editing guide in Japanese for now (the "mini JavaScript help" 
@@ -38,10 +38,23 @@ What's currently translated:
 
 * The user profile pages and the tabs in them are mostly localized.
 
-* The "community moderator tools" have largely been localized, but the 
-  "review" page hasn't been yet. I intend to do it later.
+* The "close" dialog has mostly been done, but the "flag" dialog hasn't.
+  The messages on the closed questions, e.g. "closed as not a real 
+  question by xxx" need to be done.
+
+* Some parts of the "community moderator tools" have been localized, but 
+  the "review" page hasn't been yet. I intend to do it later.
   
-* I don't intend to translate the "about", "FAQ" or "privileges" pages 
-  (aside from the names of the privileges) for now, though there are 
-  separate efforts to write Japanese documentation at 
+* I've only translated some of the red notification messages at the top 
+  of the screen as I can only localize them when I see them. The 
+  "Welcome to XXX, check out the FAQ!" messages need to be done.
+
+* A lot of the unregistered user messages, like "Please make sure you 
+  answer the question" and hints to the right of the question screens 
+  "We prefer questions that can be answered..." and "How to Format" etc
+  need to be done.
+
+* The names of the privileges have been done, but I don't intend to 
+  translate the about page, FAQ or the rest of the "privileges" page
+  for now. There are separate efforts to write Japanese documentation at 
   http://meta.japanese.stackexchange.com/questions/625/
