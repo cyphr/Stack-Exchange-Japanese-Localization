@@ -1347,300 +1347,366 @@ var jluVars = {
         'Bronze Badge': '青銅バッジ',
         
         // Badges
-        'Altruist': '利他主義者',
-        'Analytical': '分析的', // ??
-        'Announcer': 'アナウンサー',
-        'Archaeologist': '考古学者',
-        'Autobiographer': '自伝作家',
-        'Benefactor': '恩人',
-        'Beta': 'ベータ版',
-        //'Booster': '',
-        'Citizen Patrol': '市民パトロール',
-        'Civic Duty': '市民の義務', // ???
-        'Cleanup': '掃除',
-        'Commentator': '解説者',
-        //'Convention': '',
-        'Copy Editor': 'コピー・エディター',
-        'Critic': '批評家',
-        'Deputy': '代理人', // Is this supposed to mean "deputy sherrif" or something?
-        'Disciplined': '厳しくしつけられた',
-        'Editor': '編集者',
-        'Electorate': '有権者',
-        'Enlightened': '覚者',
-        'Enthusiast': '熱狂者',
-        'Epic': '最高',
-        'Excavator': '穴を掘る人',
-        'Famous Question': '有名な質問',
-        'Fanatic': '狂信者',
-        'Favorite Question': 'お気に入りの質問',
-        'Generalist': '万能選手', // TODO: Is this word for athletes etc only?
-        'Good Answer': '良い回答', 
-        'Good Question': '良い質問',
-        'Great Answer': '偉大な回答',
-        'Great Question': '偉大な質問',
-        'Guru': 'グル', // CHECK ME!
-        'Investor': '投資家',
-        'Legendary': '伝説的',
-        'Marshal': '元帥', 
-        'Mortarboard': '角帽',
-        'Necromancer': '黒魔術師',
-        'Nice Answer': 'ナイス回答', 
-        'Nice Question': 'ナイス質問',
-        'Notable Question': '目立った質問',
-        'Organizer': 'タグを整理する人',
-        'Outspoken': '積極的', // I translated it to "proactive"/"assertive" for now...
-        'Peer Pressure': '仲間からの圧力',
-        'Popular Question': '人気のある質問',
-        'Populist': '大衆主義者',
-        'Precognitive': '正夢を見る人',
-        //'Promoter': '', // ???
-        'Proofreader': '校正者',
-        'Publicist': '広報担当者',
-        'Pundit': '評論家', // CHECK ME!
-        'Quorum': '定足数',
-        'Reversal': '逆転',
-        'Reviewer': 'チェックする人',
-        'Revival': '復活',
-        'Scholar': '学者',
-        'Self-Learner': '学習者',
-        'Sportsmanship': 'スポーツマンシップ',
-        'Stellar Question': '素晴らしい質問',
-        //'Strunk & White': '',
-        'Student': '学生',
-        'Suffrage': '選挙権',
-        'Supporter': '支援者',
-        'Synonymizer': '同義語を整理する人',
-        'Tag Editor': 'タグ編集者',
-        'Talkative': 'おしゃべり',
-        'Taxonomist': '分類学者',
-        'Teacher': '先生',
-        'Tenacious': '粘り強い',
-        'Tumbleweed': 'タンブルウィード', // ???
-        //'Unsung Hero': '',
-        'Vox Populi': '国民の声',
-        'Yearling': '1周年記念' // "first year anniversary" :P
-    },
-    
-    //=======================================================//
-    //                Long Badge Descriptions                //
-    //=======================================================//
-    
-    'badgedesc': {
-        "First bounty you manually awarded on another person's question":
-        '他の人の質問に初めて賞金を与えた',
-        
-        "Visited every section of the FAQ":
-        'すべての{a|FAQ|よくある質問}のセクションを読んだ',
-        
-        'Shared a link to a question that was visited by 25 unique IP addresses':
-        '25個の固有のIPアドレスによって訪問された質問のリンクを共有した', // FIXME!
-        
-        //'Edited 100 posts that were inactive for 6 months':
-        //'',
-        
-        'Completed all user profile fields':
-        'すべてのユーザープロフィールフィールドを記入した',
-        
-        'First bounty you manually awarded on your own question':
-        '自分の質問に初めて賞金を与えた',
-        
-        //'Actively participated in the private beta':
-        //'',
-        
-        'Shared a link to a question that was visited by 300 unique IP addresses':
-        '300個の固有のIPアドレスによって訪問された質問のリンクを共有した', // FIXME!
-        
-        'First flagged post':
-        '投稿を初めて通報した',
-        
-        'Voted 300 or more times':
-        '300回以上投票した',
-        
-        'First rollback':
-        '初めて差し戻した',
-        
-        'Left 10 comments': 
-        '10個のコメントを残した',
-        
-        '10 posts with score of 2 on meta':
-        '{a|meta|メタ}で10個の1スコアの回答や質問を投稿した',
-        
-        'Edited 500 posts':
-        '500個の投稿を編集した',
-        
-        'First down vote':
-        '初めて下に投票した',
-        
-        //'Achieved a flag weight of 500 by reviewing and flagging appropriately':
-        //'',
-        
-        'Deleted own post with score of 3 or higher':
-        '自分の3ポイント以上の投稿を削除した',
-        
-        'First edit':
-        '初めて編集した',
-        
-        'Voted on 600 questions and 25% or more of total votes are on questions':
-        '600個の投稿に投票して、25％以上は質問',
-        
-        //'First to answer and accepted with at least 10 upvotes':
-        //'',
-        
-        'Visited the site each day for 30 consecutive days':
-        '30日連続このサイトに訪問した',
-        
-        'Earned 200 daily reputation 50 times':
-        '50回に一日に200信用度を得た',
-        
-        //'Edited first post that was inactive for 6 months':
-        //'',
-        
-        'Asked a question with 10,000 views':
-        '一万観覧数の質問をした',
-        
-        'Visited the site each day for 100 consecutive days':
-        '100日連続このサイトに訪問した',
-        
-        'Question favorited by 25 users':
-        '質問は25個のユーザーによってお気に入りに登録された',
-        
-        //'Provided non-wiki answers of 15 total score in 20 of top 40 tags':
-        //'',
-        
-        'Answer score of 25 or more':
-        '回答のポイントは25以上',
-        
-        'Question score of 25 or more':
-        '質問のポイントは25以上',
-        
-        'Answer score of 100 or more':
-        '回答のポイントは100以上',
-        
-        'Question score of 100 or more':
-        '質問のポイントは100以上',
-        
-        'Accepted answer and score of 40 or more':
-        'ベストアンサーでスコア40以上',
-        
-        'First bounty you offered on another person\'s question':
-        '他の人の質問に初めて賞金を提供した',
-        
-        'Earned 200 daily reputation 150 times':
-        '200日に200信用度を得た',
-        
-        //'Achieved a flag weight of 749 by reviewing and flagging appropriately':
-        //'',
-        
-        'Earned at least 200 reputation in a single day':
-        '一日にせめて200信用度を得た',
-        
-        //'Answered a question more than 60 days later with score of 5 or more':
-        //'',
-        
-        'Answer score of 10 or more':
-        '回答のポイントは10以上',
-        
-        'Question score of 10 or more':
-        '質問のポイントは10以上',
-        
-        'Asked a question with 2,500 views':
-        '2500観覧数の質問をした',
-        
-        //'First retag':
-        //'初めてリタグした',
-        
-        //'Posted 10 messages in chat that were starred by 10 different users':
-        //'',
-        
-        'Deleted own post with score of -3 or lower':
-        '自分の-3スコア以下の投稿を削除した',
-        
-        'Asked a question with 1,000 views':
-        '1000観覧数の質問をした',
-        
-        //'Highest scoring answer that outscored an accepted answer with score of more than 10 by more than 2x':
-        //'',
-        
-        //'Followed the Area 51 proposal for this site before it entered the commitment phase':
-        //'',
-        
-        'First bounty you offered on your own question':
-        '自分の質問に初めて賞金を提供した',
-        
-        //'Approved or rejected 100 suggested edits':
-        //'',
-        
-        'Shared a link to a question that was visited by 1000 unique IP addresses':
-        '1000個の固有のIPアドレスによって訪問された質問のリンクを共有した', // FIXME!
-        
-        'Left 10 comments with score of 5 or more':
-        '10個の5ポイント以上のコメントを残した',
-        
-        'One post with score of 2 on meta':
-        '{a|meta|メタ}で1スコアの回答や質問を投稿した',
-        
-        'Provided answer of +20 score to a question of -5 score':
-        '20ポイント回答を-5ポイントの質問に提供した',
-        
-        //'1000 reviews, over 200 actioned':
-        //'1000個レビューをした、200以上はFIXME',
-        
-        //'Answered more than 30 days later as first answer scoring 2 or more':
-        //'',
-        
-        'Asked a question and accepted an answer':
-        '質問して回答をベストアンサーに選んだ',
-        
-        'Answered your own question with score of 3 or more':
-        '自分の質問に3ポイント以上の回答をした',
-        
-        //'Up voted 100 competing answers':
-        //'',
-        
-        'Question favorited by 100 users':
-        '質問は100個のユーザーよってお気に入りに登録された',
-        
-        'Edited 80 posts':
-        '80個の投稿を編集した',
-        
-        'Asked first question with at least one up vote':
-        'せめて一つの上に投票された質問をした',
-        
-        'Used 30 votes in a day':
-        '一日に30回投票した',
-        
-        'First up vote':
-        '初めて上に投票した',
-        
-        'First approved tag synonym':
-        '初めて承認した{a|tag synonym|タグ同義語}',
-        
-        'First Tag Wiki Edit':
-        '初めてタグウィキを編集した',
-        
-        'Posted 10 messages, with 1 or more starred, in chat':
-        '{a|chat|チャット}で、10個のメッセージを残して、1個以上はお気に入りに登録した',
-        
-        'Created a tag used by 50 questions':
-        '50個の質問によって使われたタグを作った',
-        
-        'Answered first question with score of 1 or more':
-        '1ポイント以上の回答をはじめて投稿した',
-        
-        'Zero score accepted answers: more than 5 and 20% of total':
-        '0スコアベストアンサーは5個以上ですべての回答の20%',
-        
-        //'Asked a question with no votes, no answers, no comments, and low views for a week':
-        //'',
-        
-        'Zero score accepted answers: more than 10 and 25% of total':
-        '0スコアベストアンサーは10個以上ですべての回答の25%',
-        
-        //'Used the maximum 40 votes in a day':
-        //'',
-        
-        'Active member for a year, earning at least 200 reputation':
-        '200信用度を得て、一年間にアクティブユーザー'
+        'Altruist': [
+        	'利他主義者',
+	        "First bounty you manually awarded on another person's question",
+	        '他の人の質問に初めて賞金を与えた'
+	    ],
+        'Analytical': [
+        	'分析的', // ??
+        	"Visited every section of the FAQ",
+        	'すべての{a|FAQ|よくある質問}のセクションを読んだ'
+        ],
+        'Announcer': : [
+        	'アナウンサー',
+        	'Shared a link to a question that was visited by 25 unique IP addresses',
+        	'25個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME!
+        ],
+        'Archaeologist': [
+        	'考古学者',
+        	//'Edited 100 posts that were inactive for 6 months':
+        	//''
+        ],
+        'Autobiographer': [
+        	'自伝作家',
+        	'Completed all user profile fields',
+        	'すべてのユーザープロフィールフィールドを記入した'
+        ],
+        'Benefactor': [
+        	'恩人',
+        	'First bounty you manually awarded on your own question':
+        	'自分の質問に初めて賞金を与えた'
+        ],
+        'Beta': [
+        	'ベータ版',
+        	//'Actively participated in the private beta':
+        	//''
+    	],
+        'Booster': [
+        	'',
+        	'Shared a link to a question that was visited by 300 unique IP addresses':
+        	'300個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME!
+        ],
+        'Citizen Patrol': [
+        	'市民パトロール',
+        	'First flagged post':
+        	'投稿を初めて通報した'
+        ],
+        'Civic Duty': [
+        	'市民の義務', // ???
+        	'Voted 300 or more times':
+        	'300回以上投票した'
+        ],
+        'Cleanup': [
+        	'掃除',
+        	'First rollback':
+        	'初めて差し戻した'
+        ],
+        'Commentator': [
+        	'解説者',
+        	'Left 10 comments', 
+        	'10個のコメントを残した'
+        ],
+        'Convention': [
+        	'',
+        	'10 posts with score of 2 on meta',
+        	'{a|meta|メタ}で10個の1スコアの回答や質問を投稿した'
+        ],
+        'Copy Editor': [
+        	'コピー・エディター',
+        	'Edited 500 posts':
+        	'500個の投稿を編集した'
+        ],
+        'Critic': [
+        	'批評家',
+        	'First down vote',
+        	'初めて下に投票した'
+        ],
+        'Deputy': [
+        	'代理人', // Is this supposed to mean "deputy sherrif" or something?
+        	//'Achieved a flag weight of 500 by reviewing and flagging appropriately':
+        	//''
+        ],
+        'Disciplined': [
+        	'厳しくしつけられた'
+        	'Deleted own post with score of 3 or higher',
+        	'自分の3ポイント以上の投稿を削除した'
+        ],
+        'Editor': [
+        	'編集者',
+        	'First edit',
+        	'初めて編集した'
+        ],
+        'Electorate': [
+        	'有権者',
+        	'Voted on 600 questions and 25% or more of total votes are on questions',
+        	'600個の投稿に投票して、25％以上は質問'
+        ],
+        'Enlightened': [
+        	'覚者',
+        	//'First to answer and accepted with at least 10 upvotes':
+        	//''
+        ],
+        'Enthusiast': [
+        	'熱狂者',
+        	'Visited the site each day for 30 consecutive days':
+        	'30日連続このサイトに訪問した'
+        ],
+        'Epic': [
+        	'最高',
+        	'Earned 200 daily reputation 50 times',
+        	'50回に一日に200信用度を得た'
+        ],
+        'Excavator': [
+        	'穴を掘る人',
+        	//'Edited first post that was inactive for 6 months':
+        	//''
+        ],
+        'Famous Question': [
+        	'有名な質問',
+        	'Asked a question with 10,000 views',
+        	'一万観覧数の質問をした'
+        ],
+        'Fanatic': [
+        	'狂信者',
+        	'Visited the site each day for 100 consecutive days':
+        	'100日連続このサイトに訪問した'
+        ],
+        'Favorite Question': [
+        	'お気に入りの質問',
+        	'Question favorited by 25 users':
+        	'質問は25個のユーザーによってお気に入りに登録された'
+        ],
+        'Generalist': [
+        	'万能選手', // TODO: Is this word for athletes etc only?
+        	//'Provided non-wiki answers of 15 total score in 20 of top 40 tags':
+        	//''
+        ],
+        'Good Answer': [
+        	'良い回答', 
+        	'Answer score of 25 or more',
+        	'回答のポイントは25以上'
+        ],
+        'Good Question': [
+        	'良い質問',
+        	'Question score of 25 or more',
+        	'質問のポイントは25以上'
+        ],
+        'Great Answer': [
+        	'偉大な回答',
+        	'Answer score of 100 or more':
+        	'回答のポイントは100以上'
+        ],
+        'Great Question': [
+        	'偉大な質問',
+        	'Question score of 100 or more':
+        	'質問のポイントは100以上'
+        ],
+        'Guru': [
+        	'グル', // CHECK ME!
+        	'Accepted answer and score of 40 or more':
+        	'ベストアンサーでスコア40以上'
+        ],
+        'Investor': [
+        	'投資家',
+        	'First bounty you offered on another person\'s question':
+        	'他の人の質問に初めて賞金を提供した'
+        ],
+        'Legendary': [
+        	'伝説的',
+        	'Earned 200 daily reputation 150 times':
+        	'200日に200信用度を得た'
+        ],
+        'Marshal': [
+        	'元帥', 
+        	//'Achieved a flag weight of 749 by reviewing and flagging appropriately':
+        	//''
+        ],
+        'Mortarboard': [
+        	'角帽',
+        	'Earned at least 200 reputation in a single day':
+        	'一日にせめて200信用度を得た'
+        ],
+        'Necromancer': [
+        	'黒魔術師',
+        	//'Answered a question more than 60 days later with score of 5 or more':
+        	//''
+        ],
+        'Nice Answer': [
+        	'ナイス回答', 
+        	'Answer score of 10 or more':
+        	'回答のポイントは10以上'
+        ],
+        'Nice Question': [
+        	'ナイス質問',
+        	'Question score of 10 or more',
+        	'質問のポイントは10以上'
+        ],
+        'Notable Question': [
+        	'目立った質問',
+        	'Asked a question with 2,500 views':
+        	'2500観覧数の質問をした'
+        ],
+        'Organizer': [
+        	'タグを整理する人',
+        	//'First retag',
+        	//'初めてリタグした'
+        ],
+        'Outspoken': [
+        	'積極的', // I translated it to "proactive"/"assertive" for now...
+        	//'Posted 10 messages in chat that were starred by 10 different users':
+        	//''
+        ],
+        'Peer Pressure': [
+        	'仲間からの圧力',
+        	'Deleted own post with score of -3 or lower':
+        	'自分の-3スコア以下の投稿を削除した'
+        ],
+        'Popular Question': [
+        	'人気のある質問',
+        	'Asked a question with 1,000 views':
+        	'1000観覧数の質問をした'
+        ],
+        'Populist': [
+        	'大衆主義者',
+        	//'Highest scoring answer that outscored an accepted answer with score of more than 10 by more than 2x':
+        	//''
+        ],
+        'Precognitive': [
+        	'正夢を見る人',
+        	//'Followed the Area 51 proposal for this site before it entered the commitment phase':
+        	//''
+        ],
+        'Promoter': [
+        	'', // ???
+        	'First bounty you offered on your own question':
+        	'自分の質問に初めて賞金を提供した'
+        ],
+        'Proofreader': [
+        	'校正者',
+        	//'Approved or rejected 100 suggested edits',
+        	//''
+        ],
+        'Publicist': [
+        	'広報担当者',
+        	'Shared a link to a question that was visited by 1000 unique IP addresses':
+        	'1000個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME
+        ],
+        'Pundit': [
+        	'評論家', // CHECK ME!
+        	'Left 10 comments with score of 5 or more',
+        	'10個の5ポイント以上のコメントを残した'
+        ],
+        'Quorum': [
+        	'定足数',
+        	'One post with score of 2 on meta',
+        	'{a|meta|メタ}で1スコアの回答や質問を投稿した'
+        ],
+        'Reversal': [
+        	'逆転',
+        	'Provided answer of +20 score to a question of -5 score',
+        	'20ポイント回答を-5ポイントの質問に提供した'
+        ],
+        'Reviewer': [
+        	'チェックする人',
+        	//'1000 reviews, over 200 actioned',
+        	//'1000個レビューをした、200以上はFIXME'
+        ],
+        'Revival': [
+        	'復活',
+        	//'Answered more than 30 days later as first answer scoring 2 or more',
+        	//''
+        ],
+        'Scholar': [
+        	'学者',
+        	'Asked a question and accepted an answer',
+        	'質問して回答をベストアンサーに選んだ'
+        ],
+        'Self-Learner': [
+        	'学習者',
+        	'Answered your own question with score of 3 or more',
+        	'自分の質問に3ポイント以上の回答をした'
+        ],
+        'Sportsmanship': [
+        	'スポーツマンシップ',
+        	//'Up voted 100 competing answers',
+        	//''
+        ],
+        'Stellar Question': [
+        	'素晴らしい質問',
+        	'Question favorited by 100 users',
+        	'質問は100個のユーザーよってお気に入りに登録された'
+        ],
+        'Strunk & White': [
+        	'',
+        	'Edited 80 posts',
+        	'80個の投稿を編集した'
+        ],
+        'Student': [
+        	'学生',
+        	'Asked first question with at least one up vote',
+        	'せめて一つの上に投票された質問をした'
+        ],
+        'Suffrage': [
+        	'選挙権',
+        	'Used 30 votes in a day',
+        	'一日に30回投票した'
+        ],
+        'Supporter': [
+        	'支援者',
+        	'First up vote',
+        	'初めて上に投票した'
+        ],
+        'Synonymizer': [
+        	'同義語を整理する人',
+        	'First approved tag synonym':
+        	'初めて承認した{a|tag synonym|タグ同義語}'
+        ],
+        'Tag Editor': [
+        	'タグ編集者',
+        	'First Tag Wiki Edit'
+        	'初めてタグウィキを編集した'
+        ],
+        'Talkative': [
+        	'おしゃべり',
+        	'Posted 10 messages, with 1 or more starred, in chat',
+        	'{a|chat|チャット}で、10個のメッセージを残して、1個以上はお気に入りに登録した'
+        ],
+        'Taxonomist': [
+        	'分類学者',
+        	'Created a tag used by 50 questions'
+        	'50個の質問によって使われたタグを作った'
+        ],
+        'Teacher': [
+        	'先生',
+        	'Answered first question with score of 1 or more':
+        	'1ポイント以上の回答をはじめて投稿した'
+        ],
+        'Tenacious': [
+        	'粘り強い',
+        	'Zero score accepted answers: more than 5 and 20% of total':
+        	'0スコアベストアンサーは5個以上ですべての回答の20%'
+        ],
+        'Tumbleweed': [
+        	'タンブルウィード', // ???
+        	//'Asked a question with no votes, no answers, no comments, and low views for a week':
+        	//''
+        ],
+        'Unsung Hero': [
+        	'',
+        	'Zero score accepted answers: more than 10 and 25% of total':
+        	'0スコアベストアンサーは10個以上ですべての回答の25%'
+        ],
+        'Vox Populi': [
+        	'国民の声',
+        	//'Used the maximum 40 votes in a day',
+        	//''
+        ],
+        'Yearling': [
+        	'1周年記念', // "first year anniversary" :P
+        	'Active member for a year, earning at least 200 reputation',
+        	'200信用度を得て、一年間にアクティブユーザー'
+        ]
     },
     
     //=======================================================//
