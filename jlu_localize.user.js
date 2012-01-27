@@ -1312,7 +1312,7 @@ var jluVars = {
         'tag-question': '付加疑問',
         'rendaku': '連濁',
         'volitional': '意志動詞', // CHECK ME!
-        'vowels': '母音',
+        'vowels': '母音'//,
         
         // meta tags
         'discussion': '会話',
@@ -1357,7 +1357,7 @@ var jluVars = {
         	"Visited every section of the FAQ",
         	'すべての{a|FAQ|よくある質問}のセクションを読んだ'
         ],
-        'Announcer': : [
+        'Announcer': [
         	'アナウンサー',
         	'Shared a link to a question that was visited by 25 unique IP addresses',
         	'25個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME!
@@ -1374,32 +1374,32 @@ var jluVars = {
         ],
         'Benefactor': [
         	'恩人',
-        	'First bounty you manually awarded on your own question':
+        	'First bounty you manually awarded on your own question',
         	'自分の質問に初めて賞金を与えた'
         ],
         'Beta': [
         	'ベータ版',
-        	//'Actively participated in the private beta':
+        	//'Actively participated in the private beta',
         	//''
     	],
         'Booster': [
         	'',
-        	'Shared a link to a question that was visited by 300 unique IP addresses':
+        	'Shared a link to a question that was visited by 300 unique IP addresses',
         	'300個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME!
         ],
         'Citizen Patrol': [
         	'市民パトロール',
-        	'First flagged post':
+        	'First flagged post',
         	'投稿を初めて通報した'
         ],
         'Civic Duty': [
         	'市民の義務', // ???
-        	'Voted 300 or more times':
+        	'Voted 300 or more times',
         	'300回以上投票した'
         ],
         'Cleanup': [
         	'掃除',
-        	'First rollback':
+        	'First rollback',
         	'初めて差し戻した'
         ],
         'Commentator': [
@@ -1414,7 +1414,7 @@ var jluVars = {
         ],
         'Copy Editor': [
         	'コピー・エディター',
-        	'Edited 500 posts':
+        	'Edited 500 posts',
         	'500個の投稿を編集した'
         ],
         'Critic': [
@@ -1428,7 +1428,7 @@ var jluVars = {
         	//''
         ],
         'Disciplined': [
-        	'厳しくしつけられた'
+        	'厳しくしつけられた',
         	'Deleted own post with score of 3 or higher',
         	'自分の3ポイント以上の投稿を削除した'
         ],
@@ -1449,7 +1449,7 @@ var jluVars = {
         ],
         'Enthusiast': [
         	'熱狂者',
-        	'Visited the site each day for 30 consecutive days':
+        	'Visited the site each day for 30 consecutive days',
         	'30日連続このサイトに訪問した'
         ],
         'Epic': [
@@ -1469,12 +1469,12 @@ var jluVars = {
         ],
         'Fanatic': [
         	'狂信者',
-        	'Visited the site each day for 100 consecutive days':
+        	'Visited the site each day for 100 consecutive days',
         	'100日連続このサイトに訪問した'
         ],
         'Favorite Question': [
         	'お気に入りの質問',
-        	'Question favorited by 25 users':
+        	'Question favorited by 25 users',
         	'質問は25個のユーザーによってお気に入りに登録された'
         ],
         'Generalist': [
@@ -1494,47 +1494,47 @@ var jluVars = {
         ],
         'Great Answer': [
         	'偉大な回答',
-        	'Answer score of 100 or more':
+        	'Answer score of 100 or more',
         	'回答のポイントは100以上'
         ],
         'Great Question': [
         	'偉大な質問',
-        	'Question score of 100 or more':
+        	'Question score of 100 or more',
         	'質問のポイントは100以上'
         ],
         'Guru': [
         	'グル', // CHECK ME!
-        	'Accepted answer and score of 40 or more':
+        	'Accepted answer and score of 40 or more',
         	'ベストアンサーでスコア40以上'
         ],
         'Investor': [
         	'投資家',
-        	'First bounty you offered on another person\'s question':
+        	'First bounty you offered on another person\'s question',
         	'他の人の質問に初めて賞金を提供した'
         ],
         'Legendary': [
         	'伝説的',
-        	'Earned 200 daily reputation 150 times':
+        	'Earned 200 daily reputation 150 times',
         	'200日に200信用度を得た'
         ],
         'Marshal': [
         	'元帥', 
-        	//'Achieved a flag weight of 749 by reviewing and flagging appropriately':
+        	//'Achieved a flag weight of 749 by reviewing and flagging appropriately',
         	//''
         ],
         'Mortarboard': [
         	'角帽',
-        	'Earned at least 200 reputation in a single day':
+        	'Earned at least 200 reputation in a single day',
         	'一日にせめて200信用度を得た'
         ],
         'Necromancer': [
         	'黒魔術師',
-        	//'Answered a question more than 60 days later with score of 5 or more':
+        	//'Answered a question more than 60 days later with score of 5 or more',
         	//''
         ],
         'Nice Answer': [
         	'ナイス回答', 
-        	'Answer score of 10 or more':
+        	'Answer score of 10 or more',
         	'回答のポイントは10以上'
         ],
         'Nice Question': [
@@ -1544,7 +1544,7 @@ var jluVars = {
         ],
         'Notable Question': [
         	'目立った質問',
-        	'Asked a question with 2,500 views':
+        	'Asked a question with 2,500 views',
         	'2500観覧数の質問をした'
         ],
         'Organizer': [
@@ -1554,17 +1554,17 @@ var jluVars = {
         ],
         'Outspoken': [
         	'積極的', // I translated it to "proactive"/"assertive" for now...
-        	//'Posted 10 messages in chat that were starred by 10 different users':
+        	//'Posted 10 messages in chat that were starred by 10 different users',
         	//''
         ],
         'Peer Pressure': [
         	'仲間からの圧力',
-        	'Deleted own post with score of -3 or lower':
+        	'Deleted own post with score of -3 or lower',
         	'自分の-3スコア以下の投稿を削除した'
         ],
         'Popular Question': [
         	'人気のある質問',
-        	'Asked a question with 1,000 views':
+        	'Asked a question with 1,000 views',
         	'1000観覧数の質問をした'
         ],
         'Populist': [
@@ -1579,7 +1579,7 @@ var jluVars = {
         ],
         'Promoter': [
         	'', // ???
-        	'First bounty you offered on your own question':
+        	'First bounty you offered on your own question',
         	'自分の質問に初めて賞金を提供した'
         ],
         'Proofreader': [
@@ -1589,7 +1589,7 @@ var jluVars = {
         ],
         'Publicist': [
         	'広報担当者',
-        	'Shared a link to a question that was visited by 1000 unique IP addresses':
+        	'Shared a link to a question that was visited by 1000 unique IP addresses',
         	'1000個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME
         ],
         'Pundit': [
@@ -1659,12 +1659,12 @@ var jluVars = {
         ],
         'Synonymizer': [
         	'同義語を整理する人',
-        	'First approved tag synonym':
+        	'First approved tag synonym',
         	'初めて承認した{a|tag synonym|タグ同義語}'
         ],
         'Tag Editor': [
         	'タグ編集者',
-        	'First Tag Wiki Edit'
+        	'First Tag Wiki Edit',
         	'初めてタグウィキを編集した'
         ],
         'Talkative': [
@@ -1674,17 +1674,17 @@ var jluVars = {
         ],
         'Taxonomist': [
         	'分類学者',
-        	'Created a tag used by 50 questions'
+        	'Created a tag used by 50 questions',
         	'50個の質問によって使われたタグを作った'
         ],
         'Teacher': [
         	'先生',
-        	'Answered first question with score of 1 or more':
+        	'Answered first question with score of 1 or more',
         	'1ポイント以上の回答をはじめて投稿した'
         ],
         'Tenacious': [
         	'粘り強い',
-        	'Zero score accepted answers: more than 5 and 20% of total':
+        	'Zero score accepted answers: more than 5 and 20% of total',
         	'0スコアベストアンサーは5個以上ですべての回答の20%'
         ],
         'Tumbleweed': [
@@ -1694,7 +1694,7 @@ var jluVars = {
         ],
         'Unsung Hero': [
         	'',
-        	'Zero score accepted answers: more than 10 and 25% of total':
+        	'Zero score accepted answers: more than 10 and 25% of total',
         	'0スコアベストアンサーは10個以上ですべての回答の25%'
         ],
         'Vox Populi': [
