@@ -1312,7 +1312,7 @@ var jluVars = {
         'tag-question': '付加疑問',
         'rendaku': '連濁',
         'volitional': '意志動詞', // CHECK ME!
-        'vowels': '母音'//,
+        'vowels': '母音',
         
         // meta tags
         'discussion': '会話',
@@ -1339,7 +1339,7 @@ var jluVars = {
     //=======================================================//
     //                         Badges                        //
     //=======================================================//
-
+	
     'badges': {
         // Badge descriptions
         'Gold Badge': '金色バッジ',
@@ -1364,8 +1364,8 @@ var jluVars = {
         ],
         'Archaeologist': [
         	'考古学者',
-        	//'Edited 100 posts that were inactive for 6 months':
-        	//''
+        	'Edited 100 posts that were inactive for 6 months',
+        	''
         ],
         'Autobiographer': [
         	'自伝作家',
@@ -1379,8 +1379,8 @@ var jluVars = {
         ],
         'Beta': [
         	'ベータ版',
-        	//'Actively participated in the private beta',
-        	//''
+        	'Actively participated in the private beta',
+        	''
     	],
         'Booster': [
         	'',
@@ -1424,8 +1424,8 @@ var jluVars = {
         ],
         'Deputy': [
         	'代理人', // Is this supposed to mean "deputy sherrif" or something?
-        	//'Achieved a flag weight of 500 by reviewing and flagging appropriately':
-        	//''
+        	'Achieved a flag weight of 500 by reviewing and flagging appropriately',
+        	''
         ],
         'Disciplined': [
         	'厳しくしつけられた',
@@ -1444,8 +1444,8 @@ var jluVars = {
         ],
         'Enlightened': [
         	'覚者',
-        	//'First to answer and accepted with at least 10 upvotes':
-        	//''
+        	'First to answer and accepted with at least 10 upvotes',
+        	''
         ],
         'Enthusiast': [
         	'熱狂者',
@@ -1459,8 +1459,8 @@ var jluVars = {
         ],
         'Excavator': [
         	'穴を掘る人',
-        	//'Edited first post that was inactive for 6 months':
-        	//''
+        	'Edited first post that was inactive for 6 months',
+        	''
         ],
         'Famous Question': [
         	'有名な質問',
@@ -1479,8 +1479,8 @@ var jluVars = {
         ],
         'Generalist': [
         	'万能選手', // TODO: Is this word for athletes etc only?
-        	//'Provided non-wiki answers of 15 total score in 20 of top 40 tags':
-        	//''
+        	'Provided non-wiki answers of 15 total score in 20 of top 40 tags',
+        	''
         ],
         'Good Answer': [
         	'良い回答', 
@@ -1519,8 +1519,8 @@ var jluVars = {
         ],
         'Marshal': [
         	'元帥', 
-        	//'Achieved a flag weight of 749 by reviewing and flagging appropriately',
-        	//''
+        	'Achieved a flag weight of 749 by reviewing and flagging appropriately',
+        	''
         ],
         'Mortarboard': [
         	'角帽',
@@ -1529,8 +1529,8 @@ var jluVars = {
         ],
         'Necromancer': [
         	'黒魔術師',
-        	//'Answered a question more than 60 days later with score of 5 or more',
-        	//''
+        	'Answered a question more than 60 days later with score of 5 or more',
+        	''
         ],
         'Nice Answer': [
         	'ナイス回答', 
@@ -1549,13 +1549,13 @@ var jluVars = {
         ],
         'Organizer': [
         	'タグを整理する人',
-        	//'First retag',
-        	//'初めてリタグした'
+        	'First retag',
+        	'初めてリタグした'
         ],
         'Outspoken': [
         	'積極的', // I translated it to "proactive"/"assertive" for now...
-        	//'Posted 10 messages in chat that were starred by 10 different users',
-        	//''
+        	'Posted 10 messages in chat that were starred by 10 different users',
+        	''
         ],
         'Peer Pressure': [
         	'仲間からの圧力',
@@ -1569,13 +1569,13 @@ var jluVars = {
         ],
         'Populist': [
         	'大衆主義者',
-        	//'Highest scoring answer that outscored an accepted answer with score of more than 10 by more than 2x':
-        	//''
+        	'Highest scoring answer that outscored an accepted answer with score of more than 10 by more than 2x',
+        	''
         ],
         'Precognitive': [
         	'正夢を見る人',
-        	//'Followed the Area 51 proposal for this site before it entered the commitment phase':
-        	//''
+        	'Followed the Area 51 proposal for this site before it entered the commitment phase',
+        	''
         ],
         'Promoter': [
         	'', // ???
@@ -1584,8 +1584,8 @@ var jluVars = {
         ],
         'Proofreader': [
         	'校正者',
-        	//'Approved or rejected 100 suggested edits',
-        	//''
+        	'Approved or rejected 100 suggested edits',
+        	''
         ],
         'Publicist': [
         	'広報担当者',
@@ -1609,13 +1609,13 @@ var jluVars = {
         ],
         'Reviewer': [
         	'チェックする人',
-        	//'1000 reviews, over 200 actioned',
-        	//'1000個レビューをした、200以上はFIXME'
+        	'1000 reviews, over 200 actioned',
+        	'1000個レビューをした、200以上はFIXME'
         ],
         'Revival': [
         	'復活',
-        	//'Answered more than 30 days later as first answer scoring 2 or more',
-        	//''
+        	'Answered more than 30 days later as first answer scoring 2 or more',
+        	''
         ],
         'Scholar': [
         	'学者',
@@ -1629,8 +1629,8 @@ var jluVars = {
         ],
         'Sportsmanship': [
         	'スポーツマンシップ',
-        	//'Up voted 100 competing answers',
-        	//''
+        	'Up voted 100 competing answers',
+        	''
         ],
         'Stellar Question': [
         	'素晴らしい質問',
@@ -1689,8 +1689,8 @@ var jluVars = {
         ],
         'Tumbleweed': [
         	'タンブルウィード', // ???
-        	//'Asked a question with no votes, no answers, no comments, and low views for a week':
-        	//''
+        	'Asked a question with no votes, no answers, no comments, and low views for a week',
+        	''
         ],
         'Unsung Hero': [
         	'',
@@ -1699,8 +1699,8 @@ var jluVars = {
         ],
         'Vox Populi': [
         	'国民の声',
-        	//'Used the maximum 40 votes in a day',
-        	//''
+        	'Used the maximum 40 votes in a day',
+        	''
         ],
         'Yearling': [
         	'1周年記念', // "first year anniversary" :P
@@ -1843,6 +1843,35 @@ var jluVars = {
         //''
     }
 }
+
+
+// Remap the badge keys:
+// badges: {english badge name: japanese badge name, ...}
+// badgedesc: {english badge description: japanese badge description, ...}
+
+var badges = jluVars['badges'],
+    newBadges = jluVars['badges'] = {},
+    badgedesc = jluVars['badgedesc'] = {}
+
+$.each(badges, function(enKey, v) {
+	var jaKey = v[0],
+	    enDesc = v[1],
+	    jaDesc = v[2]
+	
+	if (typeof v=='string') {
+		newBadges[enKey] = v
+		return
+	}
+	
+	if (jaKey) {
+		newBadges[enKey] = jaKey
+	}
+	
+	if (jaDesc) {
+		badgedesc[enDesc] = jaDesc
+	}
+})
+
 
 /*
 'movie and tv enthusiasts'
