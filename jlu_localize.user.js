@@ -69,7 +69,7 @@ var strings = {
     
     // Stack Exchange dropdown
     'text: a#seTabHot': {
-        'Hot Questions': '流行っている質問'
+        'Hot Questions': 'ホットな質問'
     },
     'text: a#seTabSites': {
         'All Sites': 'すべてのサイト'
@@ -78,30 +78,30 @@ var strings = {
         'Inbox': '受信箱'
     },
     'text: div#seTabEmail a': {
-        'email settings': '電子メール設定'
+        'email settings': 'メール設定'
     },
     'text: a#seClose': {
         'close': '閉じる'
     },
     'html: div#seWrapper div.seIntro': {
         'Stack Exchange is a network of free, community-driven Q&A sites.': 
-        '{a|Stack Exchange|Stack Exchange}は無料コミュニティーに経営された質問と回答ウェブサイト・ネットワーク。'
+        '{a|Stack Exchange|Stack Exchange}はみんなでつくる無料Q&Aサイトのネットワークです'
     },
     'text: div#seContainerInbox div.itemBox div.siteInfo p': {
-        'comment on': 'コメント',
-        'answer on': '回答'
+        'comment on': 'コメント: ',
+        'answer on': '回答: '
     },
     // e-mail settings
     'text: div#seContainerEmail div.itemBox p': {
-        'Would you like to receive unread inbox notifications via email?':
-        '電子メールで受信トレイの未読メッセージを受け取りたいですか？'
+        'Would you like to receive unread inbox messages via email?':
+        '受信箱の未読メッセージをメールで受け取りますか？'
     },
     'text: div#seContainerEmail div.itemBox div': {
-        'Email:': '電子メールアドレス：'
+        'Email:': 'メールアドレス：'
     },
     'text: div#seContainerEmail div.itemBox div label': {
-        'Email me my unread inbox messages': '受信トレイの未読メッセージを送る',
-        'Do not email me inbox messages': '受信トレイのメッセージを送らない'
+        'Email me my unread inbox messages': '受信箱の未読メッセージを送る',
+        'Do not email me inbox messages': '受信箱のメッセージを送らない'
     },
     'value: input#email-save': {
         'Save': '保存'
@@ -144,7 +144,7 @@ var strings = {
         'main': 'メインサイト',
         'about': '概要',
         'faq': 'よくある質問',
-        'careers': '就職'
+        'careers': 'キャリア2.0'
     },
     
     //=======================================================//
@@ -153,14 +153,14 @@ var strings = {
     
     // Top subheader
     'text: div.subheader h1, div.subheader h1 a': {
-        'Top Questions': 'トップページ', // CHECK ME!
+        'Top Questions': 'トップページ', // 'First page' of paginated pages. http://meta.stackoverflow.com/a/90303/157841
         'All Questions': 'すべての質問',
         'Tags': 'タグ',
         'Users': 'ユーザー',
         'Badges': 'バッジ',
-        'Unanswered Questions': '未回答質問',
-        'Tagged Questions': 'タグされた質問',
-        'Votes Cast': '投票総数',
+        'Unanswered Questions': '回答のない質問',
+        'Tagged Questions': 'タグ付きの質問',
+        'Votes Cast': '投票総数', // .user-full-tab-header
         'Search Results': '検索結果',
         'Favorites': 'お気に入り',
         'Favorite': 'お気に入り',
@@ -184,38 +184,41 @@ var strings = {
     
     // Tabs
     'text: div#tabs a': {
-        'interesting': '面白い順番',
-        'featured': '賞金のある質問',
-        'active': '有効',
+        'interesting': 'おすすめ順',
+        'featured': '賞金付きの質問',
+        'active': '更新順',
         'hot': 'ホット',
         'week': '週間',
         'month': '月間',
-        'oldest': '最古順',
+        'oldest': '古い順',
         'votes': '投票順',
-        'newest': '最新順',
+        'newest': '新着',
         'faq': 'よくある質問',
         'unanswered': '未回答',
+
+        // Tags
         'popular': '人気順',
         'name': '名前順',
         'new': '最新順',
         
         // Meta stack overflow
         'bugs': 'バグ',
-        'reqs': '機能リクエスト',
+        'reqs': '機能要望',
         // Stackapps
         'apps': 'アプリ',
         'scripts': 'スクリプト',
         
-        'new users': '新入順',
-        'voters': '投票順', // CHECK ME!
-        'editors': '編集順',
-        'general': '一般',
-        'tags': 'タグ',
+        // Users
+        'new users': '登録順',
+        'voters': '投票数順', // CHECK ME!
+        'editors': '編集数順',
+        'general': '基本のバッジ',
+        'tags': 'タグバッジ',
         'my tags': 'マイタグ', // ???
         'no answers': '未回答',
         
         // User page tabs
-        'summary': '要約',
+        'summary': 'サマリ',
         'answers': '回答',
         'questions': '質問',
         'badges': 'バッジ',
@@ -223,7 +226,7 @@ var strings = {
         'bounties': '賞金',
         'activity': 'アクティビティー',
         'accounts': 'アカウント',
-        'responses': 'メール', // FIXME!
+        'responses': '返信',
         
         // Tag tabs
         'info': '情報',
@@ -234,73 +237,73 @@ var strings = {
         'relevance': '関連順',
         
         // Moderator tools
-        'stats': '統計',
-        'migrated': '移動した',
-        'close': '閉じる投票',
-        'delete': '削除投票',
+        'stats': 'トップ',
+        'migrated': '移動した質問',
+        'close': '閉じ票',
+        'delete': '削除票',
         'flags': '通報'
     },
     
     'title: div#tabs a': {
         // Top page
         'questions that may be of interest to you based on your history and tag preferences':
-        'あなたの歴史やタグ設定によって面白いかもしれない質問',
+        'あなたの活動履歴やタグ設定から算出したおすすめの質問',
         'questions that have been asked, answered, or updated recently':
-        '最近の質問や回答や修正', // FIXME!
+        '最近投稿された・回答のあった・更新のあった質問',
         'questions with the most views, answers, and votes over the last few days':
-        '数日間の最も観覧数や回答数や投票数の高い質問',
+        'ここ数日で最も閲覧数や回答数、投票数の多い質問',
         'questions with the most views, answers, and votes this week':
-        '今週の最も観覧数や回答数や投票数の高い質問',
+        '今週の最も閲覧数や回答数、投票数の多い質問',
         'questions with the most views, answers, and votes this month':
-        '今月の最も観覧数や回答数や投票数の高い質問',
+        '今月の最も閲覧数や回答数、投票数の多い質問',
         'questions with an active bounty':
-        'アクティブ賞金のある質問',
+        'アクティブな賞金付きの質問',
         // Meta stack overflow
         "questions tagged 'bug' with the most votes":
-        '「バグ」にタグされた質問（投票順）',
+        '「バグ」タグ付きの質問（投票順）',
         "questions tagged 'feature-request' with the most votes":
-        '「機能リクエスト」にタグされた質問（投票順）',
+        '「機能要望」タグ付きの質問（投票順）',
         // Stack apps
         "hot questions tagged 'app' or 'library'":
-        '「アプリ」や「ライブラリー」にタグされたホット質問',
+        '「アプリ」や「ライブラリー」タグ付きのホットな質問',
         "questions tagged 'script' with the most votes":
-        '「スクリプト」にタグされた質問（投票順）',
+        '「スクリプト」タグ付きの質問（投票順）',
         
         // Question Pages
-        //'Answers with the latest activity first':
-        //'',
-        //'Answers in the order they were provided':
-        //'',
-        //'Answers with the highest score first':
-        //'',
+        'Answers with the latest activity first':
+        '更新のあった順に回答を表示',
+        'Answers in the order they were provided':
+        '投稿順に回答を表示',
+        'Answers with the highest score first':
+        '投票総数順に回答を表示',
         
         // Questions
         'the most recently asked questions':
-        '最新質問した',
+        '新着質問',
         'questions with the most links':
-        '最もリンク数の高い質問',
+        '最もリンク数の多い質問',
         'questions with the most votes':
-        '最も投票数の高い質問',
+        '最も投票総数の多い質問',
         'questions that have recent activity':
-        '最新アクティビティーのある質問',
+        '最新更新のあった質問',
         'questions that have no upvoted answers':
-        '上に投票した回答のない質問',
+        '上げ票がついた回答のない質問',
         
         // Tags
         'most popular tags':
         '最も人気のあるタグ',
         'tags in alphabetical order':
-        'アルファベット順タグリスト',
+        'アルファベット順にタグを表示する',
         'recently created tags':
-        '最近作ったタグ',
+        '最近作られたタグ',
         
         // A Tag?
         
         // Users
         'Users with the highest reputation scores':
-        '最も評判の高いユーザー',
+        '最も信用度の高いユーザー',
         'Users who joined in the last 40 days':
-        '40日間に組んだユーザー',
+        '過去40日間に登録したユーザー',
         'Users who voted more than 10 times':
         '10回以上投票したユーザー',
         'Users who edited more than 5 posts':
@@ -308,41 +311,41 @@ var strings = {
         
         // User Profiles
         'your overall summary':
-        'あなたの要約', // CHECK ME!
+        '活動状況',
         'answers you have provided':
-        'あなたが提供した回答',
+        '投稿した回答',
         'questions you have asked':
-        'あなたの質問',
+        '投稿した質問',
         'tags you have posts in':
-        'あなたのタグにある投稿',
+        '投稿したことのあるタグ',
         'badges you have earned':
-        'あなたの得たバッジ',
+        '獲得したバッジ',
         'questions you have favorited':
-        'あなたのお気に入りの質問',
+        'お気に入りの質問',
         'bounties you have participated in':
-        'あなたの参加した賞金',
+        '参加した賞金',
         'reputation you have earned':
-        'あなたの得た信用度',
+        '獲得した信用度',
         'your recent responses':
-        'あなたの最近のメール',
+        'あなたへの最近の返信',
         'your recent activity':
-        '最近のアクティビティー',
+        '最近の活動',
         'your accounts in the Stack Exchange network':
         'あなたのStack Exchangeネットワークのアカウント',
         
         // Badges
         'standard badges':
-        '普通のバッジ',
+        '基本のバッジ',
         'tag-based badges':
         'タグバッジ',
         
         // Unanswered
         'questions with tags that I\'ve participated':
-        '自分に参加したタグにある質問',
+        '投稿したことがあるタグの付いた質問',
         'newest unanswered questions':
-        '最新未回答質問',
+        '最新の未回答質問',
         'highest voted unanswered questions':
-        '最も投票の高い未回答質問',
+        '最も投票総数が高い未回答質問',
         'questions with no answers':
         '未回答質問'
     },
@@ -360,16 +363,16 @@ var strings = {
     
     'text: div#tabs-interval a': {
         'week': '一週間',
-        'month': '一ヶ月間',
-        'quarter': '三ヶ月間',
+        'month': '一ヶ月',
+        'quarter': '三ヶ月',
         'year': '一年間',
         'all': 'すべて'
     },
     'text: div#tabs-type a': {
         'all': 'すべて',
-        'gold': '金色',
-        'silver': '銀色',
-        'bronze': '青銅'
+        'gold': '金バッジ',
+        'silver': '銀バッジ',
+        'bronze': '銅バッジ'
     },
     
     // I've disabled these tabs for now as I can't find a safe way of doing them
@@ -382,15 +385,15 @@ var strings = {
         'activity': 'アクティビティー',
         'newest': '最新順',
         'recent': '更新順',
-        'class': 'クラス順', // I don't know what this does in English...
+        'class': '色順', // By gold, silver, bronze
         'name': '名前順',
         'active': 'アクティブ',
         'offered': '提供した',
-        'earned': '所得した',
+        'earned': '獲得した',
         
         // Favorites tab
-        'views': '観覧数',
-        'added': '追加した',
+        'views': '閲覧数',
+        'added': '追加順',
         
         // Reputation tab
         'post': '投稿',
@@ -404,11 +407,11 @@ var strings = {
         'answers': '回答',
         
         // Activity tab
-        'accepts': 'ベストアンサーを選んだ',
+        'accepts': '回答を採用',
         'posts': '投稿',
         'badges': 'バッジ',
         'reviews': 'レビュー',
-        'suggestions': '示唆'
+        'suggestions': '修正案'
     },
     
     //=======================================================//
@@ -417,19 +420,19 @@ var strings = {
     
     // Right Controls ("tag subscriptions" etc)
     'text: p.ar a': {
-        'tag subscriptions »': 'タグ購読を見る »',
+        'tag subscriptions »': '購読タグを見る »',
         'all tags »': 'すべてのタグ »',
         'all badges »': 'すべてのバッジ »',
         'set tag preferences »': 'タグ設定を変更する »'
     },
     'text: h4#h-inferred-tags': {
-        'Frequented Tags': '訪問することが多いタグ' // CHECK ME!
+        'Frequented Tags': 'よく閲覧するタグ' // http://meta.stackoverflow.com/questions/108224/documentation-for-frequented-tags-feature
     },
     'text: h4#h-interesting-tags': {
-        'Favorite Tags': 'お気に入ったタグ',
+        'Favorite Tags': 'お気に入りのタグ',
     },
     'text: h4#h-ignored-tags': {
-        'Ignored Tags': '無視するタグ'
+        'Ignored Tags': '無視しているタグ'
     },
     'value: input#interestingAdd': {
         'Add': '追加'
@@ -439,42 +442,42 @@ var strings = {
     },
     'text: p.label-key': {
         'tagged': 'タグ',
-        'asked': '質問した時',
-        'viewed': '観覧数',
-        'kviews': '千観覧数',
-        'active': 'アクティブ' // CHECK ME!
+        'asked': '質問日時',
+        'viewed': '閲覧数',
+        'kviews': '閲覧数(千)',
+        'active': '最終更新'
     },
     'text: a#h-meta': {
-        'Visit Meta': 'メタに訪問する',
+        'Visit Meta': 'メタを見る',
     },
     'text: h4#h-related': {
-        'Related': '関連した質問'
+        'Related': '関連質問'
     },
     'text: h4#h-recent-tags': {
-        'Recent Tags': '最新のタグ'
+        'Recent Tags': '最新のタグ' // http://meta.stackoverflow.com/questions/31585/what-is-the-purpose-of-the-recent-tags-cloud
     },
     'text: h4#h-recent-badges': {
         'Recent Badges': '最新のバッジ'
     },
     'text: h4#h-related-tags': {
-        'Related Tags': '関連したタグ'
+        'Related Tags': '関連タグ'
     },
     'text: h4#h-linked': {
-        'Linked': 'リンクされた'
+        'Linked': 'リンクされた質問'
     },
     'text: div#questions-count p': {
         'questions': '質問数'
     },
     'text: h4#h-unanswered-tags': {
-        'Unanswered Tags': '未回答質問のタグ'
+        'Unanswered Tags': '未回答質問のタグ' // Which page?
     },
     //'text: '
     'text: div.module p': {
-        'questions tagged': 'タグされた質問数',
+        'questions tagged': 'タグ付きの質問の数',
         
         // HACK: The text spans three elements, so it's not easy
         // to i18n, but I'll do a quick work-around for now
-        'search results for': '検索結果数',
+        'search results for': '件見つかりました',
         'posts containing': ' '
     },
     'text: div.tagged a': {
@@ -487,7 +490,7 @@ var strings = {
     
     'html: form#bigsearch table tbody tr td': {
         'Want better search results? See our search tips!': 
-        'よりいい検索結果を求めますか？{a|See our search tips!|検索のヒント}をご覧ください。'
+        'お探しのものが見つかりませんか？{a|See our search tips!|検索のヒント}をご覧ください。'
     },
     
     'value: form#bigsearch table tbody tr td input': {
@@ -508,13 +511,13 @@ var strings = {
         'answer': '回答数'
     },
     'text: div.views div:nth-child(2)': {
-        'views': '観覧数',
-        'kviews': '千観覧数',
-        'view': '観覧数'
+        'views': '閲覧数',
+        'kviews': '千閲覧数',
+        'view': '閲覧数'
     },
     'title: div.answered-accepted': {
         'one of the answers was accepted as the correct answer': 
-        '回答の内、ベストアンサーは選ばれた'
+        '回答が採用されました'
     },
     
     //=======================================================//
@@ -536,19 +539,19 @@ var strings = {
     },
     'title: div.post-menu a': {
         'short permalink to this question':
-        'この質問に短いパーマリンク',
+        'この質問のパーマリンクを表示。共有しやすい短いURLです',
         
         'short permalink to this answer':
-        'この回答に短いパーマリンク',
+        'この回答のパーマリンクを表示。共有しやすい短いURLです',
         
         'revise and improve this post':
         'この投稿を修正して良くする', // CHECK ME!
         
         'vote to close or reopen question; when closed, no new answers can be added':
-        'この質問に閉じるやリオーペン投票をする。閉じてしまったら、新しい回答は追加できなくなる',
+        'この質問に閉じ・リオープン投票をする。閉じられた質問には、新しい回答は追加できなくなります',
         
         'flag this post for serious problems or moderator attention':
-        '深刻な問題やモデレータ注目のためには、この投稿を通報する'
+        'この投稿に深刻な問題がある場合やモデレータの介入が必要な場合に、通報することができます'
     },
     
     
@@ -559,28 +562,28 @@ var strings = {
     },
     'title: a.comments-link': {
         'ask author for clarification about this post':
-        'この投稿を作者に明確にするよう求める', // CHECK ME, this is probably ungrammatical! =========
+        '不明点があれば投稿者に説明を求めましょう',
     
         'expand to show all comments on this post, or add one of your own':
-        'すべてのコメントを見せて、それとも自分のコメントを追加する'
+        'すべてのコメントとコメント入力欄を表示します'
     },
     
     // Upvote/flag hover icons
     'title: a.comment-up, a.comment-flag': {
-        'this is a great comment':
-        'このコメントはいいね！',
+        'this comment adds something useful to the post':
+        '付加価値のある、いいコメントです！',
         
         'flag this comment as unconstructive, offensive, or spam':
-        'このコメントを非建設的や不快やスパムとして通報する'
+        'このコメントは非建設的・不快・スパムです。通報します'
     },
     'title: td.comment-score span': {
-        "number of 'great comment' votes received":
-        '「このコメントはいいね！」合計'
+        "number of 'useful comment' votes received":
+        '「役立つコメント」投票の合計'
     },
     
     'text: div.was-this-helpful': {
         'feedback': 'フィードバック',
-        'Was this post useful to you?': 'この投稿はあなたに役に立ったか？'
+        'Was this post useful to you?': 'この投稿は役に立ちましたか？'
     },
     
     'value: input.anon-vote': {
@@ -593,22 +596,22 @@ var strings = {
         // TODO: Fix "The question owner accepted this as the best answer 2 days ago" etc!
         
         'This question shows research effort; it is useful and clear (click again to undo)':
-        'この質問には研究の努力が見える、ほかの人に役に立って分かりやすい',
+        'この質問には努力の跡が見える: ほかの人にも役立つし分かりやすい',
         
         'This question does not show any research effort; it is unclear or not useful (click again to undo)':
-        'この質問には研究の努力が見えない、ほかの人に役に立たたない、または分かりやすくない',
+        'この質問には努力の跡が見えない: ほかの人の役にも立たたない、または分かりやすくない',
         
         'View upvote and downvote totals':
-        '上投票や下投票の合計を見る', 
+        '上げ票と下げ票の各合計を見る', 
         
         'This is a favorite question (click again to undo)':
-        'これはお気に入りの質問',
+        'これはお気に入りの質問です',
         
         'share link to this question on Facebook':
-        'この質問のリンクをフェイスブックで共有する',
+        'この質問のURLをフェイスブックで共有する',
         
         'share link to this question on Twitter':
-        'この質問のリンクをツイッターで共有する',
+        'この質問のURLをツイッターで共有する',
         
         'This answer is useful (click again to undo)':
         'この回答は役に立った',
@@ -635,17 +638,17 @@ var strings = {
         'Your Answer': 'あなたの回答'
     },
     'title: li.wmd-button': {
-        'Strong <strong> Ctrl+B': '強く強調 <strong> Ctrl+B',
+        'Strong <strong> Ctrl+B': '重要 <strong> Ctrl+B',
         'Emphasis <em> Ctrl+I': '強調 <em> Ctrl+I',
         
         'Hyperlink <a> Ctrl+L': 'ハイパーリンク <a> Ctrl+L',
         'Blockquote <blockquote> Ctrl+Q': '引用文 <blockquote> Ctrl+Q',
-        'Code Sample <pre><code> Ctrl+K': 'ソース・コードのサンプル <pre><code> Ctrl+K',
+        'Code Sample <pre><code> Ctrl+K': 'サンプルコード <pre><code> Ctrl+K',
         'Image <img> Ctrl+G': '埋め込み画像 <img> Ctrl+G',
         
         'Numbered List <ol> Ctrl+O': '順序付きリスト <ol> Ctrl+O',
         'Bulleted List <ul> Ctrl+U': '順序なしリスト <ul> Ctrl+U',
-        'Heading <h1>/<h2> Ctrl+H': '文章の見出し <h1>/<h2> Ctrl+H',
+        'Heading <h1>/<h2> Ctrl+H': '見出し <h1>/<h2> Ctrl+H',
         'Horizontal Rule <hr> Ctrl+R': '水平線 <hr> Ctrl+R',
         
         'Undo - Ctrl+Z': '取り消し - Ctrl+Z',
@@ -659,8 +662,8 @@ var strings = {
         'Save Profile': 'プロフィールを保存する' // on the "edit my profile" page
     },
     'value: div#show-editor-button input': {
-        'Add Another Answer': 'もう一つの回答を追加する',
-        'Answer Your Question': 'あなたの質問を回答する'
+        'Add Another Answer': '回答を追加する',
+        'Answer Your Question': '自分の質問に回答する'
     },
     
     // Inline editing
@@ -672,7 +675,7 @@ var strings = {
         'プロフィールをすべてのStack Exchangeネットワークのアカウントにコピーする' // in the "edit user profile" page!
     },
     'text: div.form-item table tbody tr td label, div.form-item label': {
-        'Edit Summary': '編集要約'
+        'Edit Summary': '編集内容の要約'
     },
     'text: a.cancel-edit': {
         'cancel': 'キャンセル'
@@ -681,7 +684,7 @@ var strings = {
     // Help
     'text: ul#mdhelp-tabs li': {
         'Links': 'ハイパーリンク',
-        'Images': 'イメージ',
+        'Images': '画像',
         'Styling/Headers': 'スタイルとヘッダー',
         'Lists': 'リスト',
         'Blockquotes': '引用文',
@@ -695,7 +698,7 @@ var strings = {
     },
     'text: td.vm div label': {
         'Name': '名前',
-        'Email': '電子メール',
+        'Email': 'メールアドレス',
         'Home Page': 'ホームページ'
     },
     'text: div.orword': {
@@ -711,8 +714,9 @@ var strings = {
         'lowering the reputation barrier required to edit. However, you will '+
         'not gain any upvote reputation from it. This cannot be undone.',
         
-            '回答をコミュニティー・ウィキにチェックしたら、他の人の編集の必要信用度はもっと低くなります。'+
-            'しかし、他の人は上に投票したら、信用度を得られなくなります。取り消すことはできません。']
+            '回答をコミュニティー・ウィキとして投稿すると、編集に必要な信用度が低くなり、'+
+            '他の人が編集しやすくなります。ただし、上げ票が入っても信用度は獲得できません。'+
+            '一度コミュニティー・ウィキにすると取り消すことはできません。']
     ),
     
     //=======================================================//
@@ -744,17 +748,17 @@ var strings = {
         // bio
         'website': 'ウェブサイト',
         'location': '場所',
-        'email': '電子メール',
+        'email': 'メールアドレス',
         'real name': '本名',
         'age': '年齢',
         
         // visits
-        'member for': '登録された時間', // CHECK ME!
-        'visited': '訪問',
+        'member for': '登録してから',
+        'visited': '訪問日数',
         'seen': '最終活動', 
         
         // stats
-        'profile views': 'プロフィール観覧数',
+        'profile views': 'プロフィール閲覧数',
         'flag weight': '通報影響力'
     },
     
@@ -764,12 +768,13 @@ var strings = {
         'delete': 'アカウントの削除', // only shown to absolute new users?
         'flair': '自己宣伝', // I'm not sure exactly what this means, 
                              // but I've translated it as "self publicity" for now
-        'my logins': '私のログイン',
+        'my logins': 'ログイン履歴',
         'meta user': 'メタユーザー',
         'parent user': 'メインユーザー',
         'network profile': 'ネットワーク・プロフィール'
     },
-    
+
+    // User summary    
     'text: div.subheader h1 a, div.subheader h1': {
         'Answers': '回答数',
         'Answer': '回答数',
@@ -784,8 +789,8 @@ var strings = {
         'Badge': 'バッジ数',
         'Active bounties': 'アクティブ賞金数',
         'Offered bounties': '提供した賞金数',
-        'Earned bounties': '得た賞金数',
-        'Responses': '応答数'
+        'Earned bounties': '獲得した賞金数',
+        'Responses': '返信数'
     },
     
     'text: div.user-panel-footer a': {
@@ -793,70 +798,69 @@ var strings = {
     },
     
     'text: table.votes-cast-stats thead tr th': {
-        'all time': '合計', // ???
-        'by type': '種類により', // ???
+        'all time': '通算',
+        'by type': '種類別',
         'month': '今月',
         'week': '今週',
         'day': '今日'
     },
     
     'text: table.votes-cast-stats tbody tr td': {
-        'up': '上',
-        'down': '下',
+        'up': '上げ',
+        'down': '下げ',
         'question': '質問',
         'answer': '回答'
     },
     
     'html: div.empty': {
-        'This user has not answered any questions': 'このユーザーは質問を{a|answered|答えた}ことがなかった',
-        'This user has no reputation changes': 'このユーザーの{a|reputation changes|信用度}の変化はない',
-        'This user has not asked any questions': 'このユーザーは{a|questions|質問}をしたことがなかった',
-        'This user has not participated in any tags': 'このユーザーは{a|tags|タグ}に参加したことがなかった',
-        'This user has not earned any badges': 'このユーザーは{a|badges|バッジ}を得たことがなかった',
-        'This user has not cast any votes': 'このユーザーは{a|votes|投票した}ことがなかった',
-        'This user has no favorite questions': 'このユーザーの{a|favorite questions|お気に入りの質問}はない',
-        'This user has not participated in any bounties.': 'このユーザーは{a|bounties|賞金}に参加したことがなかった。',
+        'This user has not answered any questions': 'このユーザーは質問に{a|answered|答えた}ことがありません',
+        'This user has no reputation changes': 'このユーザーの{a|reputation changes|信用度}の履歴はありません',
+        'This user has not asked any questions': 'このユーザーは{a|questions|質問}をしたことがありません',
+        'This user has not participated in any tags': 'このユーザーは{a|tags|タグ}に参加したことがありません',
+        'This user has not earned any badges': 'このユーザーは{a|badges|バッジ}を獲得したことがありません',
+        'This user has not cast any votes': 'このユーザーは{a|votes|投票した}ことがありません',
+        'This user has no favorite questions': 'このユーザーの{a|favorite questions|お気に入りの質問}はありません',
+        'This user has not participated in any bounties.': 'このユーザーは{a|bounties|賞金}に参加したことがありません。',
         
-        'You have not answered any questions': 'あなたは質問を{a|answered|答えた}ことがなかった',
-        'You have no reputation changes': 'あなたの{a|reputation changes|信用度}の変化はない',
-        'You have not asked any questions': 'あなたは{a|questions|質問}をしたことがなかった',
-        'You have not participated in any tags': 'あなたは{a|tags|タグ}に参加したことがなかった',
-        'You have not earned any badges': 'あなたは{a|badges|バッジ}を得たことがなかった',
-        'You have not cast any votes': 'あなたは{a|votes|投票した}ことがなかった',
-        'You have no favorite questions': 'あなたの{a|favorite questions|お気に入りの質問}はない',
-        'You have not participated in any bounties.': 'あなたは{a|bounties|賞金}に参加したことがなかった。',
+        'You have not answered any questions': '質問に{a|answered|答えた}ことがありません',
+        'You have no reputation changes': '{a|reputation changes|信用度}の履歴がありません',
+        'You have not asked any questions': '{a|questions|質問}をしたことがありません',
+        'You have not participated in any tags': '{a|tags|タグ}に参加したことがありません',
+        'You have not earned any badges': '{a|badges|バッジ}を獲得したことがありません',
+        'You have not cast any votes': '{a|votes|投票した}ことがありません',
+        'You have no favorite questions': '{a|favorite questions|お気に入りの質問}がありません',
+        'You have not participated in any bounties.': '{a|bounties|賞金}に参加したことがありません。',
         
-        'You have no active bounties': 'あなたのアクティブ賞金はない',
-        'You have no offered bounties': 'あなたは賞金を提供したことがなかった',
-        'You have no earned bounties': 'あなたは賞金を得たことがなかった',
-        'This user has no active bounties': 'このユーザーのアクティブ賞金はない',
-        'This user has no offered bounties': 'このユーザーは賞金を提供したことがなかった',
-        'This user has no earned bounties': 'このユーザーは賞金を得たことがなかった'
+        'You have no active bounties': 'アクティブな賞金はありません',
+        'You have no offered bounties': '賞金を提供したことがありません',
+        'You have no earned bounties': '賞金を獲得したことがありません',
+        'This user has no active bounties': 'このユーザーのアクティブな賞金はありません',
+        'This user has no offered bounties': 'このユーザーは賞金を提供したことがありません',
+        'This user has no earned bounties': 'このユーザーは賞金を獲得したことがありません'
     },
     
     'text: td.rep-desc': {
-        'upvote': '上の投票',
-        'downvoted': '下の投票',
-        'accepted': 'ベストアンサーを選んだ'
-        //'([0-9]+) vote(s?)'
+        'upvote': '上げ票',
+        'downvoted': '下げ票',
+        'accepted': '回答採用'
     },
     
     'text: table.history-table tbody tr td span, table.history-table tbody tr td, table.history-table tbody tr b': {
         'revised': '修正した',
         'answered': '回答した',
         'comment': 'コメントした',
-        'accepted': 'ベストアンサーを選んだ',
+        'accepted': '回答を採用した',
         'asked': '質問した',
-        'awarded': '受け取りました',
-        'suggested': '示唆した',
+        'awarded': '獲得した',
+        'suggested': '修正案を出した',
         'wiki': 'ウィキ',
         'approved': '承認した',
-        'rejected': '拒絶した'
+        'rejected': '却下した'
     },
     
     'text: div.rep-footnote': {
         'Reputation on deleted posts and votes is not shown here':
-        '削除された投稿の信用度はここに表示されない'
+        'ここでは削除された投稿の信用度は表示されません'
     },
     
     'text: div.account-stat span': {
@@ -878,25 +882,25 @@ var strings = {
     // "Edit" thingo
     'text: form#user-edit-form div table tbody tr td': {
         'Display Name': 'ハンドルネーム',
-        'Email': '電子メール',
+        'Email': 'メールアドレス',
         'Real Name': '本名',
         'Website': 'ウェブサイト',
         'Location': '場所',
         'Birthday': '誕生日',
-        'About Me': '個人メッセージ'
+        'About Me': '自己紹介'
     },
     'text: span.edit-field-overlay': {
         'never displayed, used for optional notifications and your gravatar':
-        'ぜんぜん表示されない、選択の通知メッセージやアバターのために使われた',
+        '完全非公開です。通知を受け取る設定にした場合や、アバター表示用に使われます。',
         
         //'briefly explain your changes (corrected spelling, fixed grammar, improved formatting)':
         //'FIXME',
         
         'YYYY/MM/DD, only used for displaying age':
-        'YYYY/MM/DD、ただ年齢の表示のために使われた',
+        'YYYY/MM/DD、年齢表示のために使われ、公開はされません',
         
         'required, but never shown': 
-        '必要ですが、公開しません' // on the anonymous "Markdown Editor" submit controls
+        '必須ですが、公開はされません' // on the anonymous "Markdown Editor" submit controls
     },
     'text: a#cancel': {
         'cancel': 'キャンセル'
@@ -905,20 +909,20 @@ var strings = {
         'change picture': '写真を変更する'
     },
     'text: table#user-edit-table tbody tr td h2': {
-        'Registered User': '登録されたユーザー',
-        'Unregistered User': '登録されないユーザー'
+        'Registered User': '登録済みのユーザー',
+        'Unregistered User': '未登録のユーザー'
     },
     
     // "Preferences" thingo
     'text: div#interesting-tags div label': {
-        'hide ignored tags': '無視するタグを隠す'
+        'hide ignored tags': '関連する投稿を完全に隠す'
     },
     'text: div.module h4': {
         'Miscellaneous': 'その他'
     },
     'text: div.module div label': {
         'Allow email notifications when I subscribe to questions or tags': 
-        '質問やタグを購読すると、電子メールのメッセージを許可する'
+        'フォローした質問やタグについて、メールで更新を受け取る'
     },
     
     //=======================================================//
@@ -927,16 +931,16 @@ var strings = {
     
     // "Tags" and "Users" pages
     'text: div.page-description table tbody tr td': {
-        'Type to find tags:': 'タイピすると、タグを検索できる：', // ???
-        'Type to find users:': 'タイピすると、ユーザーを検索できる：' // ???
+        'Type to find tags:': 'タグを検索：',
+        'Type to find users:': 'ユーザーを検索：'
     },
     'text: div#mainbar-full b a': {
         'tag synonyms': 'タグ同義語',
-        'weekly / monthly / quarterly reputation leagues': '一週間／一月刊／三月の刊信用度リーグ'
+        'weekly / monthly / quarterly reputation leagues': '週間／月間／3ヶ月毎の信用度ランキング'
     },
     'text: div.welovestackoverflow div p a': { // hahaha :P
-        'learn more…': '詳しく知りたい！',
-        'improve description': '編集する', // HACK!
+        'learn more…': 'もっと詳しく',
+        'improve tag wiki': '編集する', // HACK!
         'edit description': '編集する', // (I don't know if this is correct or not)
         'top users': 'トップユーザー',
         'synonyms': '同義タグ'
@@ -947,15 +951,15 @@ var strings = {
          'similar questions. Using the right tags makes it easier for others to '+
          'find and answer your question.',
          
-            'タグは他の類似質問を分類するキーワード、またはラベル。正しいタグを使うと、'+
-            '他の人はあなたの質問をより簡単に見つかれて回答を提供する可能性はより高くなる。'],
+            'タグは、同じトピックに関する質問をまとめて分類するためのキーワードまたはラベルです。適切なタグを質問に付けることで、'+
+            '回答を知っている人の目にとまる確率が高くなります。'],
         
         ['As you use Japanese Language and Usage - Stack Exchange to ask '+
          'and answer questions, you’ll earn badges, which appear on your '+
          'user page and in your user card.',
          
              // This might need to be explained differently! =================================
-             'このサイトに質問や回答を投稿すると、バッジを得て、ユーザープロフィールやユーザーカードに表示する。']
+             'このサイトで質問や回答を投稿するうちに、バッジを獲得することがあります。バッジはこのサイトであなたが何かを極めたあかしです。獲得したバッジはユーザープロフィールやユーザーカードに表示されます。']
     ),
     
     'text: a.edit-link': {
@@ -963,7 +967,7 @@ var strings = {
     },
     
     'html: div.user-about-me p': {
-        '(your about me is currently blank)': '（あなたの個人メッセージは現在白紙）'
+        '(your about me is currently blank)': '（現在自己紹介が空っぽです）'
     },
     
     'text: div.user-about-me p a': {
@@ -976,12 +980,12 @@ var strings = {
     
     'html: div#questions-count p': {
         'questions with no upvoted answers': 
-        '<b class="supernova">回答の票数は0以下である</b>質問', // CHECK ME!
+        '<b class="supernova">上げ票付きの回答が1つもない</b>質問', // CHECK ME!
         
         'questions with no answers':
-        '<b class="supernova">未回答</b>質問', // CHECK ME!
+        '<b class="supernova">回答が1つもない</b>質問',
         
-        'in your tags': 'あなたのタグには'
+        'in your tags': 'あなたのタグ：'
     },
     
     //=======================================================//
@@ -992,12 +996,12 @@ var strings = {
     'text: span.page-numbers': {
         'next': '次へ',
         'prev': '前へ',
-        'per page': 'ページごとの件' // FIXME!
+        'per page': '表示件数' // FIXME!
     },
     
     // "recent questions feed" at the bottom of the page
     'text: div#feed-link-text a': {
-        'recent questions feed': '最近質問RSSフィード',
+        'recent questions feed': '新着質問のRSSフィード',
         'question feed': 'この質問のRSSフィード',
         'user feed': 'このユーザーのRSSフィード'
     },
@@ -1012,8 +1016,8 @@ var strings = {
         'data': 'データ',
         'podcast': 'ポッドキャスト',
         'shop': 'ショップ',
-        'legal': '法律情報',
-        'advertising info': '広告情報',
+        'legal': '規約',
+        'advertising info': '広告',
         'mobile': 'モバイル',
         'contact us': 'お問い合わせ', 
         'feedback': 'フィードバック'
@@ -1027,18 +1031,18 @@ var strings = {
         ['Looking for more? Browse the complete list of questions, or '+
           'popular tags. Help us answer unanswered questions.',
           
-             '何か他のことを求めますか？{a|complete list of questions|すべての質問}'+
-             '、または{a|popular tags|人気タグ}を閲覧してください。'+
-             '{a|unanswered questions|未回答質問}で回答を書いてくれたら助かります。'],
+             'まだまだいけますか？{a|complete list of questions|すべての質問一覧}'+
+             '、それとも{a|popular tags|人気タグ}をどうぞ。'+
+             'あなたの{a|unanswered questions|回答を待っている質問}もあるかもしれません。'],
          
          ['Know someone who can answer? Share a link to this '+
          'question via email, Twitter, or Facebook.',
      
-            '回答できる人を知っていますか？この質問の{a|link|リンク}を{a|email|電子メール}や'+
-            '{a|Twitter|ツイッター}や{a|Facebook|フェイスブック}で共有します。'],
+            '回答できそうな人を知っていますか？この質問の{a|link|リンク}を{a|email|メール}や'+
+            '{a|Twitter|ツイッター}、{a|Facebook|フェイスブック}で共有しましょう。'],
         
         ['You must log in to answer this question.',
-            'この質問を回答するために、{a|log in|ログイン}は必要です。']
+            'この質問に回答するには{a|log in|ログイン}が必要です。']
     ),
     
     //=======================================================//
@@ -1046,8 +1050,8 @@ var strings = {
     //=======================================================//
     
     'text: span.tm-sub-links a': {
-        'subscribe': 'タグに購読する',
-        'unsubscribe': 'タグの購読をやめる',
+        'subscribe': 'タグをフォローする',
+        'unsubscribe': 'タグのフォローをやめる',
         'rss': 'RSSフィード'
     },
     
@@ -1059,17 +1063,17 @@ var strings = {
     },
     
     'text: div.tm-description a': {
-        'help us edit this wiki': 'このタグウィキを編集してくれれば助かります'
+        'help us edit this wiki': 'このタグウィキの加筆・訂正の協力者を募集中です' // Wikipedia stub
     },
     
     'title: a.tm-favorite-clear': {
         'toggle this tag between favorite, ignored, and normal':
-        'このタグをお気に入りや無視するや普通に切り替える' // CHECK ME!
+        'このタグをお気に入り/無視する/何もなしの間で切り替えます'
     },
     
     'title: span.tm-sub-links a': {
         'subscribe for email notifications on this tag':
-        'このタグを電子メール通知に購読する',
+        'このタグに関連した更新をメールで受け取る',
         
         'add this tag to your rss reader':
         'このタグをあなたのRSSリーダーに追加する'
@@ -1080,15 +1084,15 @@ var strings = {
     //=======================================================//
     
     'text: div#mainbar-full div h2': {
-        'Questions with extreme votes': '投票の高い質問',
-        'Answers with extreme votes': '投票の高い回答',
-        'Posts with notable activity': 'アクティビティの高い投稿',
+        'Questions with extreme votes': '投票が極端に多い質問',
+        'Answers with extreme votes': '投票が極端に多い回答',
+        'Posts with notable activity': 'アクティビティが多い投稿',
         'Links': 'リンク',
-        'Close votes': '閉じる投票',
-        'Reopen votes': 'リオーペン投票',
+        'Close votes': '閉じ票',
+        'Reopen votes': 'リオープン票',
         //'Recent occurrences': '',
         'Delete votes': '削除投票',
-        'Undelete votes': '復活させる投票'
+        'Undelete votes': '復活投票'
     },
     
     'text: div#mainbar-full div div h3': {
@@ -1096,16 +1100,16 @@ var strings = {
         'Lowest voted': '投票数の低い',
         'Most commented': 'コメントの高い',
         'Most edited': '編集の高い',
-        'Most viewed': '観覧の高い',
+        'Most viewed': '閲覧の高い',
         'Recently protected': '最近保存した',
         'Recently imported': '最近インポートした',
         'New tags': '新しいタグ',
         'Most Votes': '投票の高い',
         'Recent Votes': '最近の投票',
-        'Recently Closed': '最近閉めた',
-        'Recently Reopened': '最近リオーペンした',
+        'Recently Closed': '最近閉じられた',
+        'Recently Reopened': '最近リオープンした',
         'Recently Deleted': '最近削除した',
-        'Recently Undeleted': '最近復活させた'
+        'Recently Undeleted': '最近復活した'
     },
     
     //=======================================================//
@@ -1115,18 +1119,18 @@ var strings = {
     // CHECK THESE!
     'text: div#pane-main h2, div#pane1 h2, div#pane2 h2': {
         'Why should this question be closed?':
-        'どうしてこの質問を閉じるべきですか？',
+        'この質問を閉じるべき理由は何ですか？',
         'This question is a duplicate of which other question?':
-        'この質問はどの質問の写しですか？',
+        'どの質問と重複していますか？',
         'This question…':
         'この質問は…'
     },
     
     'text: span.action-name': {
-        'exact duplicate': '正確な写し',
+        'exact duplicate': '完全重複',
         'off topic': 'スレ違い',
         'not constructive': '建設的でない',
-        'not a real question': '悪い質問',
+        'not a real question': '回答不能',
         'too localized': '局所的過ぎる'
     },
     
@@ -1141,7 +1145,7 @@ var strings = {
     },
     
     'value: input.popup-submit': {
-        'Vote To Close': '閉じる投票をする'
+        'Vote To Close': '閉じ票を入れる'
     }
 }
 
@@ -1342,9 +1346,9 @@ var jluVars = {
 	
     'badges': {
         // Badge descriptions
-        'Gold Badge': '金色バッジ',
-        'Silver Badge': '銀色バッジ',
-        'Bronze Badge': '青銅バッジ',
+        'Gold Badge': '金バッジ',
+        'Silver Badge': '銀バッジ',
+        'Bronze Badge': '銅バッジ',
         
         // Badges
         'Altruist': [
@@ -1360,32 +1364,32 @@ var jluVars = {
         'Announcer': [
         	'アナウンサー',
         	'Shared a link to a question that was visited by 25 unique IP addresses',
-        	'25個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME!
+        	'質問のリンクを共有し、25個の別々のIPアドレスから訪問された'
         ],
         'Archaeologist': [
         	'考古学者',
         	'Edited 100 posts that were inactive for 6 months',
-        	''
+        	'6ヶ月間何の更新もなかった投稿を全部で100個編集した'
         ],
         'Autobiographer': [
         	'自伝作家',
         	'Completed all user profile fields',
-        	'すべてのユーザープロフィールフィールドを記入した'
+        	'ユーザープロフィールの入力欄をすべて記入した'
         ],
         'Benefactor': [
-        	'恩人',
+        	'寄贈者',
         	'First bounty you manually awarded on your own question',
         	'自分の質問に初めて賞金を与えた'
         ],
         'Beta': [
-        	'ベータ版',
+        	'ベータ',
         	'Actively participated in the private beta',
-        	''
+        	'プライベートベータ版にアクティブに参加した'
     	],
         'Booster': [
-        	'',
+        	'ブースター',
         	'Shared a link to a question that was visited by 300 unique IP addresses',
-        	'300個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME!
+        	'質問のリンクを共有し、300個の別々のIPアドレスから訪問された'
         ],
         'Citizen Patrol': [
         	'市民パトロール',
@@ -1393,7 +1397,7 @@ var jluVars = {
         	'投稿を初めて通報した'
         ],
         'Civic Duty': [
-        	'市民の義務', // ???
+        	'市民の義務',
         	'Voted 300 or more times',
         	'300回以上投票した'
         ],
@@ -1403,24 +1407,24 @@ var jluVars = {
         	'初めて差し戻した'
         ],
         'Commentator': [
-        	'解説者',
+        	'コメンテーター',
         	'Left 10 comments', 
         	'10個のコメントを残した'
         ],
         'Convention': [
-        	'',
+        	'委員会',
         	'10 posts with score of 2 on meta',
-        	'{a|meta|メタ}で10個の1スコアの回答や質問を投稿した'
+        	'{a|meta|メタ}でスコア2以上の質問や回答を10個投稿した'
         ],
         'Copy Editor': [
-        	'コピー・エディター',
+        	'熟練編集者',
         	'Edited 500 posts',
         	'500個の投稿を編集した'
         ],
         'Critic': [
         	'批評家',
         	'First down vote',
-        	'初めて下に投票した'
+        	'初めて下げ票を入れた'
         ],
         'Deputy': [
         	'代理人', // Is this supposed to mean "deputy sherrif" or something?
@@ -1428,9 +1432,9 @@ var jluVars = {
         	''
         ],
         'Disciplined': [
-        	'厳しくしつけられた',
+        	'規律精神',
         	'Deleted own post with score of 3 or higher',
-        	'自分の3ポイント以上の投稿を削除した'
+        	'自分の3スコア以上の投稿を削除した'
         ],
         'Editor': [
         	'編集者',
@@ -1440,67 +1444,67 @@ var jluVars = {
         'Electorate': [
         	'有権者',
         	'Voted on 600 questions and 25% or more of total votes are on questions',
-        	'600個の投稿に投票して、25％以上は質問'
+        	'600個の投稿に投票し、25％以上が質問に対するもの'
         ],
         'Enlightened': [
         	'覚者',
         	'First to answer and accepted with at least 10 upvotes',
-        	''
+        	'一番乗りで回答し、10以上の上げ票を獲得して採用された'
         ],
         'Enthusiast': [
         	'熱狂者',
         	'Visited the site each day for 30 consecutive days',
-        	'30日連続このサイトに訪問した'
+        	'30日連続でこのサイトを訪問した'
         ],
         'Epic': [
-        	'最高',
+        	'英雄',
         	'Earned 200 daily reputation 50 times',
-        	'50回に一日に200信用度を得た'
+        	'一日の獲得信用度の上限である200に50回達した'
         ],
         'Excavator': [
-        	'穴を掘る人',
+        	'発掘人',
         	'Edited first post that was inactive for 6 months',
-        	''
+        	'6ヶ月の間何の更新もなかった投稿を編集した'
         ],
         'Famous Question': [
         	'有名な質問',
         	'Asked a question with 10,000 views',
-        	'一万観覧数の質問をした'
+        	'一万閲覧数の質問をした'
         ],
         'Fanatic': [
         	'狂信者',
         	'Visited the site each day for 100 consecutive days',
-        	'100日連続このサイトに訪問した'
+        	'100日連続でこのサイトを訪問した'
         ],
         'Favorite Question': [
         	'お気に入りの質問',
         	'Question favorited by 25 users',
-        	'質問は25個のユーザーによってお気に入りに登録された'
+        	'質問が25人のユーザーによってお気に入りに登録された'
         ],
         'Generalist': [
         	'万能選手', // TODO: Is this word for athletes etc only?
         	'Provided non-wiki answers of 15 total score in 20 of top 40 tags',
-        	''
+        	'トップ40のタグのうち20個において、15スコア以上の回答を投稿した（コミュニティ・ウィキを除く）'
         ],
         'Good Answer': [
         	'良い回答', 
         	'Answer score of 25 or more',
-        	'回答のポイントは25以上'
+        	'回答が25スコア以上を獲得した'
         ],
         'Good Question': [
         	'良い質問',
         	'Question score of 25 or more',
-        	'質問のポイントは25以上'
+        	'質問が25スコア以上を獲得した'
         ],
         'Great Answer': [
         	'偉大な回答',
         	'Answer score of 100 or more',
-        	'回答のポイントは100以上'
+        	'回答が100スコア以上を獲得した'
         ],
         'Great Question': [
         	'偉大な質問',
         	'Question score of 100 or more',
-        	'質問のポイントは100以上'
+        	'質問が100スコア以上を獲得した'
         ],
         'Guru': [
         	'グル', // CHECK ME!
@@ -1515,7 +1519,7 @@ var jluVars = {
         'Legendary': [
         	'伝説的',
         	'Earned 200 daily reputation 150 times',
-        	'200日に200信用度を得た'
+        	'一日の獲得信用度の上限である200に150回達した'
         ],
         'Marshal': [
         	'元帥', 
@@ -1525,12 +1529,12 @@ var jluVars = {
         'Mortarboard': [
         	'角帽',
         	'Earned at least 200 reputation in a single day',
-        	'一日にせめて200信用度を得た'
+        	'一日に200以上の信用度を獲得した'
         ],
         'Necromancer': [
         	'黒魔術師',
         	'Answered a question more than 60 days later with score of 5 or more',
-        	''
+        	'60日以上後に回答し、5スコア以上を獲得した'
         ],
         'Nice Answer': [
         	'ナイス回答', 
@@ -1540,72 +1544,72 @@ var jluVars = {
         'Nice Question': [
         	'ナイス質問',
         	'Question score of 10 or more',
-        	'質問のポイントは10以上'
+        	'回答が10スコア以上を獲得した'
         ],
         'Notable Question': [
         	'目立った質問',
         	'Asked a question with 2,500 views',
-        	'2500観覧数の質問をした'
+        	'2500閲覧数の質問をした'
         ],
         'Organizer': [
-        	'タグを整理する人',
+        	'整理整頓',
         	'First retag',
         	'初めてリタグした'
         ],
         'Outspoken': [
         	'積極的', // I translated it to "proactive"/"assertive" for now...
         	'Posted 10 messages in chat that were starred by 10 different users',
-        	''
+        	'スターが10個付いたチャットの発言が10個に達した'
         ],
         'Peer Pressure': [
-        	'仲間からの圧力',
+        	'同調圧力',
         	'Deleted own post with score of -3 or lower',
         	'自分の-3スコア以下の投稿を削除した'
         ],
         'Popular Question': [
         	'人気のある質問',
         	'Asked a question with 1,000 views',
-        	'1000観覧数の質問をした'
+        	'1000閲覧数の質問をした'
         ],
         'Populist': [
         	'大衆主義者',
         	'Highest scoring answer that outscored an accepted answer with score of more than 10 by more than 2x',
-        	''
+        	'回答のスコアが採用された10スコア以上回答を2倍以上上回り、スコア順では一番'
         ],
         'Precognitive': [
         	'正夢を見る人',
         	'Followed the Area 51 proposal for this site before it entered the commitment phase',
-        	''
+        	'このサイトがArea 51で提案された時から、コミットフェーズに入る前にフォローしていた'
         ],
         'Promoter': [
-        	'', // ???
+        	'主催者', // ??
         	'First bounty you offered on your own question',
         	'自分の質問に初めて賞金を提供した'
         ],
         'Proofreader': [
         	'校正者',
         	'Approved or rejected 100 suggested edits',
-        	''
+        	'修正案を100個承認または却下した'
         ],
         'Publicist': [
         	'広報担当者',
         	'Shared a link to a question that was visited by 1000 unique IP addresses',
-        	'1000個の固有のIPアドレスによって訪問された質問のリンクを共有した' // FIXME
+        	'質問のリンクを共有し、1000個の別々のIPアドレスから訪問された'
         ],
         'Pundit': [
-        	'評論家', // CHECK ME!
+        	'識者',
         	'Left 10 comments with score of 5 or more',
-        	'10個の5ポイント以上のコメントを残した'
+        	'5スコア以上のコメントを10個の残した'
         ],
         'Quorum': [
         	'定足数',
         	'One post with score of 2 on meta',
-        	'{a|meta|メタ}で1スコアの回答や質問を投稿した'
+        	'{a|meta|メタ}で2スコアの回答や質問を投稿した'
         ],
         'Reversal': [
         	'逆転',
         	'Provided answer of +20 score to a question of -5 score',
-        	'20ポイント回答を-5ポイントの質問に提供した'
+        	'+20スコア回答を-5スコアの質問に投稿した'
         ],
         'Reviewer': [
         	'チェックする人',
@@ -1615,17 +1619,17 @@ var jluVars = {
         'Revival': [
         	'復活',
         	'Answered more than 30 days later as first answer scoring 2 or more',
-        	''
+        	'30日以上後に一番乗りで回答し2スコア以上を獲得した'
         ],
         'Scholar': [
         	'学者',
         	'Asked a question and accepted an answer',
-        	'質問して回答をベストアンサーに選んだ'
+        	'質問して回答を採用した'
         ],
         'Self-Learner': [
-        	'学習者',
+        	'勉強家',
         	'Answered your own question with score of 3 or more',
-        	'自分の質問に3ポイント以上の回答をした'
+        	'自分の質問に3スコア以上の回答をした'
         ],
         'Sportsmanship': [
         	'スポーツマンシップ',
@@ -1635,10 +1639,10 @@ var jluVars = {
         'Stellar Question': [
         	'素晴らしい質問',
         	'Question favorited by 100 users',
-        	'質問は100個のユーザーよってお気に入りに登録された'
+        	'質問が100人のユーザーによってお気に入りに登録された'
         ],
         'Strunk & White': [
-        	'',
+        	'作文術の大家',
         	'Edited 80 posts',
         	'80個の投稿を編集した'
         ],
@@ -1655,12 +1659,12 @@ var jluVars = {
         'Supporter': [
         	'支援者',
         	'First up vote',
-        	'初めて上に投票した'
+        	'初めて上げ票を入れた'
         ],
         'Synonymizer': [
-        	'同義語を整理する人',
+        	'同義語整理人',
         	'First approved tag synonym',
-        	'初めて承認した{a|tag synonym|タグ同義語}'
+        	'初めて{a|tag synonym|タグ同義語}を承認した'
         ],
         'Tag Editor': [
         	'タグ編集者',
@@ -1670,7 +1674,7 @@ var jluVars = {
         'Talkative': [
         	'おしゃべり',
         	'Posted 10 messages, with 1 or more starred, in chat',
-        	'{a|chat|チャット}で、10個のメッセージを残して、1個以上はお気に入りに登録した'
+        	'{a|chat|チャット}で10回以上発言し、1個以上のスターが付いた'
         ],
         'Taxonomist': [
         	'分類学者',
@@ -1680,32 +1684,32 @@ var jluVars = {
         'Teacher': [
         	'先生',
         	'Answered first question with score of 1 or more',
-        	'1ポイント以上の回答をはじめて投稿した'
+        	'1スコア以上の回答をはじめて投稿した'
         ],
         'Tenacious': [
         	'粘り強い',
         	'Zero score accepted answers: more than 5 and 20% of total',
-        	'0スコアベストアンサーは5個以上ですべての回答の20%'
+        	'0スコアのベストアンサーが5個以上ですべての回答の20%'
         ],
         'Tumbleweed': [
-        	'タンブルウィード', // ???
+        	'閑古鳥',
         	'Asked a question with no votes, no answers, no comments, and low views for a week',
-        	''
+        	'1週間、投票もなくコメントもなく閲覧数も少ない質問をした'
         ],
         'Unsung Hero': [
-        	'',
+        	'無名の英雄',
         	'Zero score accepted answers: more than 10 and 25% of total',
-        	'0スコアベストアンサーは10個以上ですべての回答の25%'
+        	'0スコアのベストアンサーが10個以上ですべての回答の25%'
         ],
         'Vox Populi': [
         	'国民の声',
         	'Used the maximum 40 votes in a day',
-        	''
+        	'1日の投票数の上限40に達した'
         ],
         'Yearling': [
         	'1周年記念', // "first year anniversary" :P
         	'Active member for a year, earning at least 200 reputation',
-        	'200信用度を得て、一年間にアクティブユーザー'
+        	'一年間サイトで活動し、少なくとも信用度を200獲得した'
         ]
     },
     
@@ -1716,27 +1720,27 @@ var jluVars = {
     'perms': {
         'trusted user': '信頼されたユーザー',
         'protect questions': '質問を保護する',
-        'access to moderator tools': 'モデレータ・ツールをアクセスする',
-        'approve tag wiki edits': '他の人のタグウィキ編集を認める',
+        'access to moderator tools': 'モデレータ・ツールにアクセスする',
+        'approve tag wiki edits': '他の人のタグウィキ編集を承認する',
         'create tag synonyms': 'タグ同義語を作る',
-        //'create gallery chat rooms': '',
+        'create gallery chat rooms': '発言権限付きチャットルームを作る',
         'edit questions and answers': '質問と回答を編集する',
         'established user': '認められたユーザー',
-        //'cast close and reopen votes': '',
-        'view close votes': '閉じる票数を見る',
-        //'retag questions': '',
+        'cast close and reopen votes': '閉じ票・リオープン票を入れる',
+        'view close votes': '閉じ票数を見る',
+        'retag questions': '質問をリタグする',
         'create tags': '新しいタグを作る',
-        'vote down': '下に投票する',
+        'vote down': '下げ票を入れる',
         'create chat rooms': 'チャットルームを作成する',
         'edit community wiki': 'コミュニティー・ウィキ投稿を編集する',
         'set bounties': '賞金をセットする', // CHECK ME!
-        'comment everywhere': 'サイト全体でコメントを残す',
-        'talk in chat': 'チャットでしゃべる',
+        'comment everywhere': 'どこでもコメントを残せる',
+        'talk in chat': 'チャットで発言する',
         'flag posts': '投稿を通報する',
-        'vote up': '上に投票する',
+        'vote up': '上げ票を入れる',
         'create wiki posts': 'ウィキ投稿を作る',
-        'remove new user restrictions': '新入りの制限を解除する',
-        'participate in meta': 'メタで参加する',
+        'remove new user restrictions': '新規ユーザーの制限を解除する',
+        'participate in meta': 'メタに参加する',
         'create posts': '新しい質問をしたり回答をしたりする'
     },
     
@@ -2038,7 +2042,7 @@ var regexes = {
     // "unanswered questions" tab
     // FIXME: Don't process on the main page! ===========================================
     'html: div.views': [
-        [/^([0-9]+) view(s?)$/, '{match|1|number}観覧数']
+        [/^([0-9]+) view(s?)$/, '{match|1|number}閲覧数']
     ],
     
     //=======================================================//
@@ -2126,9 +2130,9 @@ var regexes = {
     ],
     
     'title: a.badge': [
-        [/^gold badge: (.*?)$/, '金色バッジ：{jluvar|1|badgedesc}'],
-        [/^silver badge: (.*?)$/, '銀色バッジ：{jluvar|1|badgedesc}'],
-        [/^bronze badge: (.*?)$/, '青銅バッジ：{jluvar|1|badgedesc}']
+        [/^gold badge: (.*?)$/, '金バッジ：{jluvar|1|badgedesc}'],
+        [/^silver badge: (.*?)$/, '銀バッジ：{jluvar|1|badgedesc}'],
+        [/^bronze badge: (.*?)$/, '銅バッジ：{jluvar|1|badgedesc}']
     ],
     
     //=======================================================//
@@ -2148,8 +2152,8 @@ var regexes = {
     //=======================================================//
     
     'text: div#seContainerInbox div.itemBox div.siteInfo p': [
-        [/^([0-9]+) comments on$/, '{match|1}つのコメント'],
-        [/^([0-9]+) answers on$/, '{match|1}つの回答']
+        [/^([0-9]+) comments on$/, '{match|1}個のコメント'],
+        [/^([0-9]+) answers on$/, '{match|1}個の回答']
     ],
     
     //=======================================================//
@@ -2875,9 +2879,9 @@ var jluLoc = {
     
     _dateTypes: {
         // These need to be checked!
-        asked: 'に質問した',
-        edited: 'に編集した',
-        modified: 'に修正した'
+        asked: 'に質問',
+        edited: 'に編集',
+        modified: 'に修正'
     },
     
     //=======================================================//
