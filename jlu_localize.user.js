@@ -77,6 +77,9 @@ var strings = {
     'text: a#seTabInbox': {
         'Inbox': '受信箱'
     },
+    'text: a#seTabNotices': {
+        'Notifications': 'お知らせ'
+    },
     'text: div#seTabEmail a': {
         'email settings': 'メール設定'
     },
@@ -88,6 +91,7 @@ var strings = {
         '{a|Stack Exchange|Stack Exchange}はみんなでつくる無料Q&Aサイトのネットワークです'
     },
     'text: div#seContainerInbox div.itemBox div.siteInfo p': {
+        'chat message on': 'チャット: ',
         'comment on': 'コメント: ',
         'answer on': '回答: '
     },
@@ -159,6 +163,7 @@ var strings = {
         'Users': 'ユーザー',
         'Badges': 'バッジ',
         'Unanswered Questions': '回答のない質問',
+        'Tag info': 'タグ情報',
         'Tagged Questions': 'タグ付きの質問',
         'Votes Cast': '投票総数', // .user-full-tab-header
         'Search Results': '検索結果',
@@ -230,8 +235,6 @@ var strings = {
         
         // Tag tabs
         'info': '情報',
-        'users': 'ユーザー',
-        'synonyms': '同義タグ',
         
         // Search tab
         'relevance': '関連順',
@@ -527,6 +530,7 @@ var strings = {
     // The controls under tags on questions
     // These are incomplete as I don't have access to them all
     'text: div.post-menu a': {
+        'share': '共有',
         'link': 'リンク',
         'edit': '編集',
         'improve this question': '編集', // HACK!
@@ -535,7 +539,8 @@ var strings = {
         'delete': '削除',
         'undelete': '復活させる',
         'reopen': 'リオープン',
-        'flag': '通報' // ???
+        'flag': '通報', // ???
+        'protect': '保護'
     },
     'title: div.post-menu a': {
         'short permalink to this question':
@@ -568,6 +573,15 @@ var strings = {
         'すべてのコメントとコメント入力欄を表示します'
     },
     
+    // "Add bounty" links
+    'text: a.bounty-link': {
+        'start a bounty': '賞金を懸ける'
+    },
+    'title: a.bounty-link': {
+        'offer some of your reputation for better answers':
+        '信用度を賞金として、よりよい回答を募集します'
+    },
+
     // Upvote/flag hover icons
     'title: a.comment-up, a.comment-flag': {
         'this comment adds something useful to the post':
@@ -759,6 +773,7 @@ var strings = {
         
         // stats
         'profile views': 'プロフィール閲覧数',
+        'helpful flags': '有効通報数',
         'flag weight': '通報影響力'
     },
     
@@ -768,6 +783,7 @@ var strings = {
         'delete': 'アカウントの削除', // only shown to absolute new users?
         'flair': '自己宣伝', // I'm not sure exactly what this means, 
                              // but I've translated it as "self publicity" for now
+        'apps': '連携アプリ',
         'my logins': 'ログイン履歴',
         'meta user': 'メタユーザー',
         'parent user': 'メインユーザー',
@@ -1017,6 +1033,8 @@ var strings = {
         'podcast': 'ポッドキャスト',
         'shop': 'ショップ',
         'legal': '規約',
+        'privacy policy': 'プライバシー',
+        'jobs': '採用',
         'advertising info': '広告',
         'mobile': 'モバイル',
         'contact us': 'お問い合わせ', 
@@ -1391,6 +1409,11 @@ var jluVars = {
         	'Shared a link to a question that was visited by 300 unique IP addresses',
         	'質問のリンクを共有し、300個の別々のIPアドレスから訪問された'
         ],
+        'Caucus': [
+        	'党員集会',
+        	'Visited an election during any phase of an active election and have enough reputation to cast a vote',
+        	'選挙期間中、投票するのに充分な信用度がある状態でサイトを訪問した。選挙のどの段階かは問わない'
+        ],
         'Citizen Patrol': [
         	'市民パトロール',
         	'First flagged post',
@@ -1411,6 +1434,11 @@ var jluVars = {
         	'Left 10 comments', 
         	'10個のコメントを残した'
         ],
+        'Constituent': [
+        	'選挙人',
+        	'Voted for a candidate in the final phase of an election', 
+        	'選挙の最終投票で候補者に投票した'
+        ],
         'Convention': [
         	'委員会',
         	'10 posts with score of 2 on meta',
@@ -1426,10 +1454,15 @@ var jluVars = {
         	'First down vote',
         	'初めて下げ票を入れた'
         ],
+        'Custodian': [
+        	'守衛',
+        	'Completed at least one review task. This badge is awarded once per review type', 
+        	'1回以上レビュー作業をおこなった。このバッジはレビュー種別ごとに与えられます'
+        ],
         'Deputy': [
-        	'代理人', // Is this supposed to mean "deputy sherrif" or something?
-        	'Achieved a flag weight of 500 by reviewing and flagging appropriately',
-        	''
+        	'保安官代理',
+        	'Raised 80 helpful flags',
+        	'有効な通報を80回おこなった'
         ],
         'Disciplined': [
         	'規律精神',
@@ -1522,9 +1555,9 @@ var jluVars = {
         	'一日の獲得信用度の上限である200に150回達した'
         ],
         'Marshal': [
-        	'元帥', 
-        	'Achieved a flag weight of 749 by reviewing and flagging appropriately',
-        	''
+        	'保安官', 
+        	'Raised 500 helpful flags',
+        	'有効な通報を500回おこなった'
         ],
         'Mortarboard': [
         	'角帽',
@@ -1606,15 +1639,20 @@ var jluVars = {
         	'One post with score of 2 on meta',
         	'{a|meta|メタ}で2スコアの回答や質問を投稿した'
         ],
+        'Research Assistant': [
+        	'研究助手',
+        	'Edited 50 tag wikis',
+        	'タグウィキを50個編集した'
+        ],
         'Reversal': [
         	'逆転',
         	'Provided answer of +20 score to a question of -5 score',
         	'+20スコア回答を-5スコアの質問に投稿した'
         ],
         'Reviewer': [
-        	'チェックする人',
-        	'1000 reviews, over 200 actioned',
-        	'1000個レビューをした、200以上はFIXME'
+        	'レビュワー',
+        	'Completed at least 250 review tasks. This badge is awarded once per review type',
+        	'250回以上レビュー作業をおこなった。このバッジはレビュー種別ごとに与えられます'
         ],
         'Revival': [
         	'復活',
@@ -1633,13 +1671,18 @@ var jluVars = {
         ],
         'Sportsmanship': [
         	'スポーツマンシップ',
-        	'Up voted 100 competing answers',
-        	''
+        	'Up voted 100 answers on questions where an answer of yours has a positive score',
+        	'自分の回答のスコアが1以上ある質問で、自分以外の回答に100回上げ票を入れた'
         ],
         'Stellar Question': [
         	'素晴らしい質問',
         	'Question favorited by 100 users',
         	'質問が100人のユーザーによってお気に入りに登録された'
+        ],
+        'Steward': [
+        	'支配人',
+        	'Completed at least 1,000 review tasks. This badge is awarded once per review type',
+        	'1,000回以上レビュー作業をおこなった。このバッジはレビュー種別ごとに与えられます'
         ],
         'Strunk & White': [
         	'作文術の大家',
@@ -1648,8 +1691,8 @@ var jluVars = {
         ],
         'Student': [
         	'学生',
-        	'Asked first question with at least one up vote',
-        	'せめて一つの上に投票された質問をした'
+        	'Asked first question with score of 1 or more',
+        	'初めてのスコア1以上の質問'
         ],
         'Suffrage': [
         	'選挙権',
@@ -2161,7 +2204,8 @@ var regexes = {
     //=======================================================//
     
     'text: td.rep-desc': [
-        [/^([0-9]+) vote(s?)$/, '{match|1}投票数']
+        [/^([0-9]+) vote(s?)$/, '{match|1}投票数'],
+        [/^([0-9]+) event(s?)$/, '{match|1}個の更新']
     ],
     
     // "visited: X days, X consecutive"
