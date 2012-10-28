@@ -2425,7 +2425,16 @@ var jluLoc = {
             
             // close dialog
             'div#pane-main',
-            'div.popup-actions div'
+            'div.popup-actions div',
+	    
+	    // date localization
+	    'span.relativetime',
+	    'span.comment-date span', 
+	    'p.label-key b', 
+	    'td.cool', 
+	    'td.warm', 
+	    'td.rep-time', 
+	    'td.rep-day'
         ]
         var x, 
             i = 0, 
