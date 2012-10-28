@@ -13,6 +13,7 @@
 // @include        http://stackapps.com/*
 // @exclude        http://area51.stackexchange.com/*
 // @exclude        http://*.area51.stackexchange.com/*
+// @license        Creative Commons CC0 1.0 Universal; http://creativecommons.org/publicdomain/zero/1.0/
 // ==/UserScript==
 
 function runJQueryScript(f) {
