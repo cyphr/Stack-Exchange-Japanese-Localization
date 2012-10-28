@@ -15,7 +15,25 @@
 // @exclude        http://*.area51.stackexchange.com/*
 // ==/UserScript==
 
-(function() { // scope everything...
+function runJQueryScript(f) {
+    if (unsafeWindow.$) {
+        // Firefox et al which support unsafeWindow
+        $ = unsafeWindow.$
+        f()
+    }
+    else {
+        // Other browsers like Google Chrome don't support unsafeWindow, 
+        // so use the method at http://stackoverflow.com/questions/2246901/
+      
+	// Inject our main script
+	var script = document.createElement('script')
+	script.type = "text/javascript"
+	script.textContent = '(' + f.toString() + ')();'
+	document.body.appendChild(script)
+    }
+}
+
+runJQueryScript(function() { // scope everything...
 
 function getObject(a) {
     /* 
@@ -3028,4 +3046,4 @@ else {
     jluLoc.init()
 }
 
-})();
+});
