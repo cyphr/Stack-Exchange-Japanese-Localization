@@ -15,25 +15,23 @@ into Japanese (http://creativecommons.org/publicdomain/zero/1.0/)
 Supported browsers:
 ===================
 
-Currently testing it only on Google Chrome and Firefox with Greasemonkey, 
+Currently testing it only on Chromium and Firefox with Greasemonkey, 
 but I intend to support other browsers later.
 
 What's currently translated:
 ============================
 
-* Most of the tag names on the JLU website 
-  (the detailed descriptions aren't translated).
+* Most of the tag names on the JLU website (about 4/6 pages, 
+  the detailed descriptions aren't translated).
 
-* A majority of the badge names and descriptions. Some descriptions 
-  on the badges page haven't been filled in as they were too difficult 
-  for me to translate.
+* A majority of the badge names and descriptions.
 
 * Most of the tabs, UI elements etc on the main page, questions page, 
   tags page, users page and unanswered page.
 
-* The Stack Exchange dropdown's tabs, e-mail settings, the notifications 
-  tab and most of the site names have been localized, but the descriptions 
-  of the sites haven't. I intend to do them later.
+* The Stack Exchange dropdown's tabs, e-mail settings, the inbox and 
+  notifications tabs, and most of the site names have been localized, 
+  but the descriptions of the sites haven't.
   
 * The "user reputation changes" changes popup at the top has been done.
 
@@ -48,11 +46,11 @@ What's currently translated:
   question by xxx" need to be done.
 
 * Some parts of the "community moderator tools" have been localized, but 
-  the "review" page hasn't been yet. I intend to do it later.
+  the "review" page hasn't been yet. 
   
-* I've only translated some of the red notification messages at the top 
-  of the screen as I can only localize them when I see them. The 
-  "Welcome to XXX, check out the FAQ!" messages need to be done.
+* I've only translated some of the notification messages in the 
+  notifications tab of the screen as I can only localize them when I 
+  see them.
 
 * A lot of the unregistered user messages, like "Please make sure you 
   answer the question" and hints to the right of the question screens 
