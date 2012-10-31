@@ -32,6 +32,9 @@ What's currently translated:
 * The Stack Exchange dropdown's tabs, e-mail settings, the inbox and 
   notifications tabs, and most of the site names have been localized, 
   but the descriptions of the sites haven't.
+
+* I've only translated some of the notification messages in the 
+  notifications tab as I can only localize them when I see them.
   
 * The "user reputation changes" changes popup at the top has been done.
 
@@ -47,10 +50,6 @@ What's currently translated:
 
 * Some parts of the "community moderator tools" have been localized, but 
   the "review" page hasn't been yet. 
-  
-* I've only translated some of the notification messages in the 
-  notifications tab of the screen as I can only localize them when I 
-  see them.
 
 * A lot of the unregistered user messages, like "Please make sure you 
   answer the question" and hints to the right of the question screens 
